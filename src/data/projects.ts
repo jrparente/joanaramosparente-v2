@@ -177,8 +177,10 @@ export default [
     isFeatured: false,
     iscasestudy: false,
     name: "Personal portfolio website 📝",
+    shortDescription:
+      "My personal portfolio built with the latest React 18 and Vite, showcasing my work and experiments in web development. Features Lucide React icons and styled with Tailwind CSS.",
     description:
-      "What you see right here! My personal sandbox, this site is where I experiment with new ideas and put my skills to the test. It's built with Vite and React, and features packages like Styled Components and React Router. Plus, it's where I get to share my work.",
+      "Welcome to my digital playground! This site is where I tinker with the latest technologies and showcase my work. It's built with Vite and React 18, leveraging features from React Router 6 and Lucide React for icons. The styling is done using Tailwind CSS.",
     image: "./joanaramosparente.png",
     links: {
       github: "https://github.com/jrparente/joanaramosparente",
@@ -188,10 +190,12 @@ export default [
     },
     techstack: [
       "JavaScript",
-      "React",
-      "Styled Components",
-      "React Router",
+      "TypeScript",
+      "React 18",
+      "React Router 6",
       "Vite",
+      "Lucide React",
+      "Tailwind CSS",
     ],
   },
   {
