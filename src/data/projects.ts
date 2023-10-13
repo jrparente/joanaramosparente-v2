@@ -136,6 +136,8 @@ export default [
     isFeatured: false,
     iscasestudy: false,
     name: "AI Travel Planner ✈️",
+    shortDescription:
+      "An intuitive travel planner powered by AI. Generates personalized travel itineraries based on user preferences, including destinations, attractions, and activities. Features secure user authentication through Firebase.",
     description:
       "AI Travel Planner is a web application that helps users plan their trips using artificial intelligence. By inputting their destination and travel preferences, the application provides personalized travel plans including recommended destinations, attractions, and itineraries. It's a powerful tool for those who love to travel but find the planning process overwhelming or time-consuming.",
     image: "/ai-travel-agent-screenshot.png",
@@ -205,6 +207,8 @@ export default [
     iscasestudy: false,
     name: "Simple Dinners Generator 🍽️",
     image: "./simple-dinners.png",
+    shortDescription:
+      "A meal planning app designed for simplicity. Automatically generates a week's worth of easy-to-cook dinner ideas along with a shopping list. Tailored for those who prefer straightforward meals.",
     description:
       "Ever found yourself stuck deciding what to cook for dinner? Me too! That's why I'm creating an app that'll whip up simple dinner ideas for the whole week. It'll even generate a shopping list for you. I know there are already some out there, but this one's custom-made for those of us who prefer 'simpler' meals. It's a work in progress, but I'm quite proud of it.",
     links: {
