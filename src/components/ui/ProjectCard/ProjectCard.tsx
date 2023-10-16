@@ -10,7 +10,7 @@ function ProjectCard({ project }: ProjectCardProps) {
   console.log(project);
 
   return (
-    <div className="bg-white p-4">
+    <div className="bg-white py-4">
       <div className="screen">
         <div
           className="viewport"
