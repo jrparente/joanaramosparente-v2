@@ -14,11 +14,11 @@ function ProjectsSection() {
       </h2>
       <div className="flex flex-col justify-center items-start lg:flex-row lg:items-center gap-8">
         <article className="w-full">
-          <p className="text-sm sm:text-base text-gray-600 font-medium pb-4 sm:pb-10">
+          <p>
             Below are some of the projects that best represent my skills and
             experiences in web development.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-20 mt-10 md:mt-20">
             {projectsData.map((project) => (
               <ProjectCard key={project.id} project={project} />
             ))}

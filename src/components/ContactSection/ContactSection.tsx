@@ -12,13 +12,13 @@ function ContactSection() {
       </h2>
       <div className="flex flex-col justify-center items-start lg:flex-row lg:items-center gap-8">
         <article className="w-full">
-          <p className="text-sm sm:text-base text-gray-600 font-medium pb-4 sm:pb-10">
+          <p>
             I'm open to new opportunities, whether it's a full-time position or
             freelance projects. Feel free to reach out; I aim to respond as
             quickly as I can.
           </p>
 
-          <div className="flex gap-2">
+          <div className="flex flex-wrap gap-2 mt-10 md:mt-20">
             <a href="mailto:jrparente@gmail.com">
               <Button>
                 <div className="flex gap-2 items-center">

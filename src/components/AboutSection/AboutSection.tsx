@@ -27,12 +27,12 @@ function AboutSection() {
       </h2>
       <div className=" flex flex-col justify-center items-start lg:flex-row lg:items-center gap-8">
         <article className="w-full">
-          <p className="text-sm sm:text-base text-gray-600 font-medium pb-4 sm:pb-10">
+          <p>
             Full-stack web developer, specializing in the MERN stack, with over
             10 years of professional experience as an Account and Business
             Manager in the Internet sector
           </p>
-          <p className="text-sm sm:text-base text-gray-600 font-medium pb-4 sm:pb-10">
+          <p>
             Skilled in business management, sales, e-commerce, and digital
             marketing. A dedicated lifelong learner passionate about
             problem-solving, technology, and continuous professional

@@ -58,5 +58,5 @@ h3 {
 }
 
 p {
-  @apply leading-7 [&:not(:first-child)]:mt-6 text-sm sm:text-base text-gray-600;
+  @apply leading-7 [&:not(:first-child)]:mt-6 [&:not(:first-child)]:mb-6 text-sm sm:text-base text-gray-600;
 }

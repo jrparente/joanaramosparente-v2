@@ -5,16 +5,14 @@ function HeroSection() {
   return (
     <section className="max-w-screen-xl mx-auto min-h-screen flex flex-col justify-center lg:flex-row lg:items-center gap-8 mt-20 md:mt-24 lg:mt-0 px-5 xs:px-10 sm:px-12 md:px-24">
       <article className="w-full">
-        <p className="text-primary-500 font-mono pb-1.5 sm:pb-3">
-          Hi, my name is
-        </p>
-        <h1 className="text-4xl sm:text-5xl text-gray-900 font-extrabold pb-1.5 sm:pb-3">
+        <p className="text-primary-500 font-mono">Hi, my name is</p>
+        <h1 className="text-4xl sm:text-5xl text-gray-900 font-extrabold pb-1.5 md:pb-3">
           Joana Parente
         </h1>
-        <p className="text-2xl sm:text-4xl text-gray-600 font-extrabold pb-2.5 sm:pb-5">
+        <span className="text-2xl sm:text-4xl text-gray-600 font-extrabold pb-2.5 sm:pb-3">
           I build things for the web.
-        </p>
-        <p className="text-sm sm:text-base text-gray-600 font-medium pb-4 sm:pb-10">
+        </span>
+        <p>
           I'm a Portugal-based Full-Stack Developer, transitioning from a career
           in account management and digital marketing. With a deep understanding
           of business needs and client relations, I bring a unique and valuable
