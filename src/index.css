@@ -60,3 +60,40 @@ h3 {
 p {
   @apply leading-7 [&:not(:first-child)]:mt-6 [&:not(:first-child)]:mb-6 text-sm sm:text-base text-gray-600;
 }
+
+/* Project Card Image */
+
+.imac {
+  padding: 1rem 1.5rem;
+  margin: 0 auto;
+  max-width: 620px;
+}
+
+.screen {
+  position: relative;
+  width: 100%;
+}
+
+.screen::before {
+  content: "";
+  display: block;
+  padding-top: 60%;
+}
+
+.viewport {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: #333;
+  transition: background-position 3s ease;
+  background-position: 0 0;
+  background-size: 100% auto;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.viewport:hover {
+  background-position: 0 100%;
+}

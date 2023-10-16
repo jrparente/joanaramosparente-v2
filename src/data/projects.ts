@@ -19,9 +19,9 @@ export default [
     techstack: [
       "React.js",
       "Next.js",
-      "Sanity.io",
       "TypeScript",
       "Tailwind CSS",
+      "Sanity.io",
       "Shadcnui",
     ],
     features: [
@@ -148,12 +148,13 @@ export default [
       casestudy: "../CaseStudies/ai-travel-agent",
     },
     techstack: [
-      "AI Prompt Engineering",
-      "APIs",
-      "NextJS",
       "React",
+      "NextJS",
       "Node.js",
+      "CSS",
+      "APIs",
       "Firebase",
+      "AI Prompt Engineering",
     ],
     features: [
       "Personalized Itineraries: Leverages OpenAI's API to generate unique travel plans based on user input such as destination, budget, travel partner, and preferred activities.",
@@ -190,15 +191,7 @@ export default [
       instagram: "",
       casestudy: "",
     },
-    techstack: [
-      "JavaScript",
-      "TypeScript",
-      "React 18",
-      "React Router 6",
-      "Vite",
-      "Lucide React",
-      "Tailwind CSS",
-    ],
+    techstack: ["React", "TypeScript", "React Router", "Vite", "Tailwind CSS"],
   },
   {
     id: 1,
@@ -217,6 +210,6 @@ export default [
       instagram: "",
       casestudy: "",
     },
-    techstack: ["HTML5", "CSS3", "JavaScript", "React"],
+    techstack: ["React", "CSS", "JavaScript"],
   },
 ];
