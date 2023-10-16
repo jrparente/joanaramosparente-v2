@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <BrowserRouter>
-      <main className="font-body w-full max-w-screen-xl mx-auto relative">
+      <main className="font-body w-full relative">
         <Navbar />
         <Routes>
           <Route path="/" index element={<Home />} />

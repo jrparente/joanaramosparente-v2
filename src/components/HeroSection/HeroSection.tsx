@@ -3,7 +3,7 @@ import Button from "../ui/Button";
 
 function HeroSection() {
   return (
-    <section className="min-h-screen flex flex-col justify-center lg:flex-row lg:items-center gap-8 mt-20 md:mt-24 lg:mt-0 px-5 xs:px-10 sm:px-12 md:px-24">
+    <section className="max-w-screen-xl mx-auto min-h-screen flex flex-col justify-center lg:flex-row lg:items-center gap-8 mt-20 md:mt-24 lg:mt-0 px-5 xs:px-10 sm:px-12 md:px-24">
       <article className="w-full">
         <p className="text-primary-500 font-mono pb-1.5 sm:pb-3">
           Hi, my name is

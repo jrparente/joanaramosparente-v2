@@ -19,7 +19,7 @@ const marketingSkills: string[] = [
 function AboutSection() {
   return (
     <section
-      className="min-h-screen px-5 xs:px-10 sm:px-12 md:px-24 py-24"
+      className="max-w-screen-xl mx-auto min-h-screen px-5 xs:px-10 sm:px-12 md:px-24 py-24"
       id="about"
     >
       <h2 className="text-2xl sm:text-4xl text-gray-900 font-extrabold pb-1.5 sm:pb-3">
