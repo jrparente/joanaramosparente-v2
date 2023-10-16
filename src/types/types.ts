@@ -1,5 +1,5 @@
 export interface Links {
-  github: string;
+  github?: string;
   live?: string;
   instagram?: string;
   casestudy?: string;

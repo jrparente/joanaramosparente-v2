@@ -13,8 +13,6 @@ export default [
     links: {
       github: "https://github.com/jrparente/farol-discover",
       live: "https://www.faroldiscover.pt/",
-      instagram: "",
-      casestudy: "../CaseStudies/farol-discover",
     },
     techstack: [
       "React.js",
@@ -55,8 +53,6 @@ export default [
     links: {
       github: "https://github.com/jrparente/ai-business-genie",
       live: "https://www.aibusinessgenie.pt/",
-      instagram: "",
-      casestudy: "../CaseStudies/ai-business-genie",
     },
     techstack: [
       "React.js",
@@ -93,12 +89,10 @@ export default [
       "A CRUD application built to manage library assets and loans, featuring a responsive design for desktop and mobile. Offers user authentication and real-time database updates.",
     description:
       "The Library Management Dashboard is a comprehensive CRUD web application with both desktop and mobile versions. The desktop version is built on top of Next.js and Tailwind CSS, while the mobile version uses React Native. For the backend, the project uses Supabase to handle user authentication and database management.",
-    image: "/library-management-dashboard.png", // Replace with your image path
+    image: "/library-management-dashboard.png",
     links: {
-      github: "https://github.com/jrparente/my-book-library", // Replace with your repository link
-      live: "https://mybooklibrary.vercel.app/", // Replace with your live link
-      instagram: "",
-      casestudy: "../CaseStudies/library-management-dashboard",
+      github: "https://github.com/jrparente/my-book-library",
+      live: "https://mybooklibrary.vercel.app/",
     },
     techstack: [
       "React.js",
@@ -116,18 +110,18 @@ export default [
       "Responsive Design: The UI is fully responsive and adapts to various screen sizes.",
     ],
     codeHighlights: [
-      "Utilized React hooks (useState, useEffect) and custom hooks for state management.",
-      "Integrated Supabase for real-time database updates and user authentication.",
-      "Used Next.js for server-side rendering in the desktop version, improving performance and SEO.",
-      "Implemented React Native for the mobile app versions.",
-      "Used Tailwind CSS for rapid UI development in the desktop version, adhering to a mobile-first design approach.",
-      "Modularized the codebase with a focus on component reusability and clean architecture.",
+      "State Management: Utilized React hooks (useState, useEffect) and custom hooks for state management.",
+      "Backend Integration: Integrated Supabase for real-time database updates and user authentication.",
+      "Server-side Rendering: Used Next.js for server-side rendering in the desktop version, improving performance and SEO.",
+      "Mobile Development: Implemented React Native for the mobile app versions.",
+      "UI Development: Used Tailwind CSS for rapid UI development in the desktop version, adhering to a mobile-first design approach.",
+      "Code Organization: Modularized the codebase with a focus on component reusability and clean architecture.",
     ],
     challengesAndLearnings: [
-      "Implementing real-time search and filter functionalities.",
-      "Managing state across various components and contexts.",
-      "Learning to work with Supabase for backend functionalities.",
-      "Adapting the desktop version into a mobile app using React Native.",
+      "Search and Filter: Implementing real-time search and filter functionalities.",
+      "State Management: Managing state across various components and contexts.",
+      "Backend Learning: Learning to work with Supabase for backend functionalities.",
+      "Mobile Adaptation: Adapting the desktop version into a mobile app using React Native.",
     ],
   },
   {
@@ -142,10 +136,8 @@ export default [
       "AI Travel Planner is a web application that helps users plan their trips using artificial intelligence. By inputting their destination and travel preferences, the application provides personalized travel plans including recommended destinations, attractions, and itineraries. It's a powerful tool for those who love to travel but find the planning process overwhelming or time-consuming.",
     image: "/ai-travel-agent-screenshot.png",
     links: {
-      github: "https://github.com/jrparente/ai-travel-agent", // private repository
+      github: "https://github.com/jrparente/ai-travel-agent",
       live: "https://ai-travel-agent.netlify.app/",
-      instagram: "",
-      casestudy: "../CaseStudies/ai-travel-agent",
     },
     techstack: [
       "React",
@@ -188,8 +180,6 @@ export default [
     links: {
       github: "https://github.com/jrparente/joanaramosparente",
       live: "",
-      instagram: "",
-      casestudy: "",
     },
     techstack: ["React", "TypeScript", "React Router", "Vite", "Tailwind CSS"],
   },
@@ -207,8 +197,6 @@ export default [
     links: {
       github: "https://github.com/jrparente/app-simple-dinners",
       live: "https://simple-dinner-generator.netlify.app/",
-      instagram: "",
-      casestudy: "",
     },
     techstack: ["React", "CSS", "JavaScript"],
   },

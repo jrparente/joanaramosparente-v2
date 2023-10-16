@@ -1,25 +1,38 @@
 import { Menu } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import MobileSidebar from "../MobileSidebar";
 import Button from "../ui/Button";
+import { useLocation } from "react-router-dom";
 
 const routes = [
   {
     label: "About",
-    href: "#about",
+    href: "/#about",
   },
   {
     label: "Projects",
-    href: "#projects",
+    href: "/#projects",
   },
   {
     label: "Contact",
-    href: "#contact",
+    href: "/#contact",
   },
 ];
 
 function Navbar() {
+  const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    if (location.hash) {
+      const elem = document.getElementById(location.hash.slice(1));
+      if (elem) {
+        elem.scrollIntoView();
+      }
+    } else {
+      window.scrollTo({ top: 0, left: 0 });
+    }
+  }, [location]);
 
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
@@ -36,12 +49,12 @@ function Navbar() {
     >
       <MobileSidebar isOpen={isOpen} closeSidebar={closeSidebar} />
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4 px-5 xs:px-10 sm:px-12 md:px-24 ">
-        <a href="/" className="flex items-center">
-          <span className="hidden sm:inline-block self-center text-lg whitespace-nowrap uppercase">
+        <a href="/#" className="flex items-center">
+          <span className="hidden sm:inline-block self-center text-lg whitespace-nowrap uppercase text-gray-900">
             Joana
             <span className="hidden sm:inline-block font-bold">Parente</span>
           </span>
-          <span className="sm:hidden self-center text-2xl whitespace-nowrap uppercase">
+          <span className="sm:hidden self-center text-2xl whitespace-nowrap uppercase text-gray-900">
             J<span className="sm:hidden font-bold">P</span>
           </span>
         </a>

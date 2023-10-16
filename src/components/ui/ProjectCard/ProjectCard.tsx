@@ -1,23 +1,32 @@
 import { Project } from "../../../types/types";
 import Button from "../Button";
-import { Github, ExternalLink } from "lucide-react";
+import { Github, ExternalLink, FileText } from "lucide-react";
 
 interface ProjectCardProps {
   project: Project;
 }
 
 function ProjectCard({ project }: ProjectCardProps) {
-  console.log(project);
-
   return (
-    <div className="bg-white py-4">
+    <div className="bg-white py-4 flex flex-col gap-4">
       <div className="screen">
-        <div
-          className="viewport"
-          style={{
-            backgroundImage: `url('${project.image}')`,
-          }}
-        ></div>
+        {project.iscasestudy ? (
+          <a href={`/case-study/${project.id}`}>
+            <div
+              className="viewport"
+              style={{
+                backgroundImage: `url('${project.image}')`,
+              }}
+            ></div>
+          </a>
+        ) : (
+          <div
+            className="viewport"
+            style={{
+              backgroundImage: `url('${project.image}')`,
+            }}
+          ></div>
+        )}
       </div>
       <div>
         {project.isFeatured && (
@@ -37,6 +46,15 @@ function ProjectCard({ project }: ProjectCardProps) {
           ))}
         </ul>
         <div className="flex gap-2">
+          {project.iscasestudy && (
+            <a href={`/case-study/${project.id}`}>
+              <Button>
+                <div className="flex gap-2 items-center">
+                  <FileText className="w-4 h-4" /> Case Study
+                </div>
+              </Button>
+            </a>
+          )}
           {project.links.github && (
             <a
               href={project.links.github}

@@ -14,9 +14,14 @@ body,
   height: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  @apply text-sm sm:text-base text-gray-600;
 }
 
 img,
@@ -46,38 +51,40 @@ h6 {
 }
 
 h1 {
-  @apply scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl;
+  @apply scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl text-gray-900;
 }
 
 h2 {
-  @apply scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0;
+  @apply scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0 text-gray-900;
 }
 
 h3 {
-  @apply scroll-m-20 text-2xl font-semibold tracking-tight;
+  @apply scroll-m-20 text-2xl font-semibold tracking-tight text-gray-900;
 }
 
 p {
-  @apply leading-7 [&:not(:first-child)]:mt-6 [&:not(:first-child)]:mb-6 text-sm sm:text-base text-gray-600;
+  @apply leading-7 [&:not(:first-child)]:mt-6 [&:not(:first-child)]:mb-6;
 }
 
 /* Project Card Image */
-
-.imac {
-  padding: 1rem 1.5rem;
-  margin: 0 auto;
-  max-width: 620px;
-}
-
-.screen {
+.screen,
+.screen-custom {
   position: relative;
   width: 100%;
 }
 
+/* 16:10 Aspect Ratio */
 .screen::before {
   content: "";
   display: block;
   padding-top: 60%;
+}
+
+/* Custom Height */
+.screen-custom::before {
+  content: "";
+  display: block;
+  padding-top: 85%;
 }
 
 .viewport {
@@ -87,7 +94,7 @@ p {
   right: 0;
   top: 0;
   background: #333;
-  transition: background-position 3s ease;
+  transition: background-position 7s ease;
   background-position: 0 0;
   background-size: 100% auto;
   overflow: hidden;
