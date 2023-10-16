@@ -45,7 +45,7 @@ function ProjectCard({ project }: ProjectCardProps) {
             </li>
           ))}
         </ul>
-        <div className="flex gap-2">
+        <div className="flex flex-wrap gap-2">
           {project.iscasestudy && (
             <a href={`/case-study/${project.id}`}>
               <Button>

@@ -1,7 +1,7 @@
 import React from "react";
 
 const buttonStyles = {
-  default: "bg-primary-500 text-white hover:bg-primary-600",
+  default: "bg-primary-700 text-white hover:bg-primary-800",
   secondary: "bg-gray-300 text-gray-800 hover:bg-gray-400",
   danger: "bg-red-500 text-white hover:bg-red-600",
 };

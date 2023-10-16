@@ -3,10 +3,12 @@ export default [
     id: 6,
     live: true,
     isFeatured: true,
+    isPublicRepository: true,
     iscasestudy: true,
+    date: "2023-10-15",
     name: "Farol Discover 🗺️",
     shortDescription:
-      "Farol Discover is a travel-focused website with a custom CMS, dynamic content fetching, and a responsive design, built using React.js and Next.js.",
+      "Farol Discover is a travel-focused website with a custom CMS, dynamic content fetching, and a responsive design, built using React and Next.js.",
     description:
       "Farol Discover is a travel-centric website, uniquely designed to be user-friendly. It features a customized Sanity Studio CMS that allows easy content management across various pages, including the homepage, about page, and contact page. The CMS also enables the client to manage tour programs and testimonials dynamically.",
     image: "/farol-discover-clipped.png",
@@ -15,7 +17,7 @@ export default [
       live: "https://www.faroldiscover.pt/",
     },
     techstack: [
-      "React.js",
+      "React",
       "Next.js",
       "TypeScript",
       "Tailwind CSS",
@@ -44,6 +46,8 @@ export default [
     live: true,
     isFeatured: false,
     iscasestudy: true,
+    isPublicRepository: false,
+    date: "2023-09-15",
     name: "AI Business Genie 🤖",
     shortDescription:
       "An AI-powered business and content creation assistant designed to streamline daily tasks for professionals.",
@@ -51,14 +55,15 @@ export default [
       "AI Business Genie is an advanced platform that automates the generation of high-quality content as well as intricate business plans. Aimed at marketers, entrepreneurs, and business professionals, the platform uses sophisticated AI algorithms to save time and effort in content creation and business planning.",
     image: "/ai-business-genie.png",
     links: {
-      github: "https://github.com/jrparente/ai-business-genie",
+      github: "",
       live: "https://www.aibusinessgenie.pt/",
     },
     techstack: [
-      "React.js",
+      "React",
       "Next.js",
       "TypeScript",
       "Tailwind CSS",
+      "APIs",
       "Shadcnui",
       "Clerk Auth",
       "Prisma",
@@ -84,6 +89,8 @@ export default [
     live: true,
     isFeatured: true,
     iscasestudy: true,
+    isPublicRepository: true,
+    date: "2023-10-15",
     name: "Library Management Dashboard 📚",
     shortDescription:
       "A CRUD application built to manage library assets and loans, featuring a responsive design for desktop and mobile. Offers user authentication and real-time database updates.",
@@ -95,10 +102,11 @@ export default [
       live: "https://mybooklibrary.vercel.app/",
     },
     techstack: [
-      "React.js",
+      "React",
       "Next.js",
       "React Native",
       "Tailwind CSS",
+      "APIs",
       "Supabase",
     ],
     features: [
@@ -128,7 +136,9 @@ export default [
     id: 3,
     live: true,
     isFeatured: false,
-    iscasestudy: false,
+    iscasestudy: true,
+    isPublicRepository: false,
+    date: "2023-08-15",
     name: "AI Travel Planner ✈️",
     shortDescription:
       "An intuitive travel planner powered by AI. Generates personalized travel itineraries based on user preferences, including destinations, attractions, and activities. Features secure user authentication through Firebase.",
@@ -136,7 +146,7 @@ export default [
       "AI Travel Planner is a web application that helps users plan their trips using artificial intelligence. By inputting their destination and travel preferences, the application provides personalized travel plans including recommended destinations, attractions, and itineraries. It's a powerful tool for those who love to travel but find the planning process overwhelming or time-consuming.",
     image: "/ai-travel-agent-screenshot.png",
     links: {
-      github: "https://github.com/jrparente/ai-travel-agent",
+      github: "",
       live: "https://ai-travel-agent.netlify.app/",
     },
     techstack: [
@@ -171,6 +181,8 @@ export default [
     live: true,
     isFeatured: false,
     iscasestudy: false,
+    isPublicRepository: true,
+    date: "2023-10-15",
     name: "Personal portfolio website 📝",
     shortDescription:
       "My personal portfolio built with the latest React 18 and Vite, showcasing my work and experiments in web development. Features Lucide React icons and styled with Tailwind CSS.",
@@ -187,6 +199,7 @@ export default [
     id: 1,
     live: true,
     isFeatured: false,
+    isPublicRepository: true,
     iscasestudy: false,
     name: "Simple Dinners Generator 🍽️",
     image: "./simple-dinners.png",
