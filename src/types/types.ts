@@ -10,6 +10,7 @@ export interface Project {
   live: boolean;
   isFeatured: boolean;
   iscasestudy: boolean;
+  date: string;
   name: string;
   shortDescription?: string;
   description: string;

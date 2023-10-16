@@ -11,11 +11,16 @@ function CaseStudyPage({ project }: CaseStudyPageProps) {
   return (
     <>
       <section className="min-h-screen mt-20 md:mt-24 space-y-8">
-        <header className="max-w-screen-xl mx-auto px-5 xs:px-10 sm:px-12 md:px-24 flex flex-col items-start text-4xl font-semibold gap-2">
-          <span className="text-xs uppercase font-mono text-primary-700 bg-primary-100 px-2 py-1 inline-block rounded">
-            Case Study
+        <header className="max-w-screen-xl mx-auto px-5 xs:px-10 sm:px-12 md:px-24 grid grid-cols-1 sm:grid-cols-2 items-start sm:items-end">
+          <div className="flex flex-col items-start text-4xl font-semibold gap-2">
+            <span className="text-xs uppercase font-mono text-primary-700 bg-primary-100 px-2 py-1 inline-block rounded">
+              Case Study
+            </span>
+            <span className="text-gray-900">{project.name}</span>
+          </div>
+          <span className="sm:ml-auto mt-2 sm:mt-0 text-gray-600 font-semibold text-xs">
+            Last Updated on: {project.date}
           </span>
-          <span className="text-gray-900">{project.name}</span>
         </header>
 
         <article className="bg-gray-100 mb-12 w-full">

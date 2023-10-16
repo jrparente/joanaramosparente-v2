@@ -12,7 +12,7 @@ function ProjectsSection() {
   const [isCaseStudy, setIsCaseStudy] = useState(false);
 
   useEffect(() => {
-    let filtered = projects;
+    let filtered = [...projects];
 
     if (selectedTech.length > 0) {
       filtered = filtered.filter((project) =>
@@ -27,7 +27,10 @@ function ProjectsSection() {
     if (isCaseStudy) {
       filtered = filtered.filter((project) => project.iscasestudy);
     }
-    console.log(filtered);
+
+    // Sort by featured
+    filtered.sort((a, b) => (b.isFeatured ? 1 : 0) - (a.isFeatured ? 1 : 0));
+
     setFilteredProjects(filtered);
   }, [selectedTech, isLive, isCaseStudy]);
 

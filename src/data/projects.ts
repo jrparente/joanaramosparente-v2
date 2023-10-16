@@ -201,6 +201,7 @@ export default [
     isFeatured: false,
     isPublicRepository: true,
     iscasestudy: false,
+    date: "2023-01-15",
     name: "Simple Dinners Generator 🍽️",
     image: "./simple-dinners.png",
     shortDescription:
