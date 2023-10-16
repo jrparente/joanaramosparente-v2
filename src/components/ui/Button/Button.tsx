@@ -21,12 +21,14 @@ export interface ButtonProps
 const Button: React.FC<ButtonProps> = ({
   variant = "default",
   size = "medium",
+  className = "",
   children,
   ...props
 }) => {
   const classes = `
     ${buttonStyles[variant]}
     ${sizeStyles[size]}
+     ${className}
     inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50
   `;
 

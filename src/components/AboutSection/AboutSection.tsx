@@ -1,5 +1,8 @@
 // import profileImage from "../../assets/images/joana-parente-small.jpg";
 
+import { Download } from "lucide-react";
+import Button from "../ui/Button";
+
 const technicalSkills: string[] = [
   "HTML & CSS",
   "JavaScript",
@@ -51,6 +54,11 @@ function AboutSection() {
               ))}
             </div>
           </article>
+          <a href="/Joana_Parente_Resume.pdf" download>
+            <Button className="mt-10 flex items-center gap-2">
+              <Download /> Resume
+            </Button>
+          </a>
         </article>
         {/* <figure className="w-full md:w-4/5 md:self-center flex justify-center">
           <img
