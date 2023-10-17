@@ -141,6 +141,22 @@ function ProjectsSection() {
                 <li>
                   <div className="flex items-center">
                     <input
+                      id="javascriptCheckbox"
+                      type="checkbox"
+                      className="w-4 h-4 text-primary-600 bg-gray-100 border-gray-300 rounded focus:ring-primary-500 focus:ring-2"
+                      onChange={() => toggleTech("JavaScript")}
+                    />
+                    <label
+                      htmlFor="javascriptCheckbox"
+                      className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                    >
+                      JavaScript
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div className="flex items-center">
+                    <input
                       id="typescriptCheckbox"
                       type="checkbox"
                       className="w-4 h-4 text-primary-600 bg-gray-100 border-gray-300 rounded focus:ring-primary-500 focus:ring-2"

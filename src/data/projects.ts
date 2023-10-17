@@ -109,6 +109,7 @@ export default [
     techstack: [
       "React",
       "Next.js",
+      "JavaScript",
       "React Native",
       "Tailwind CSS",
       "APIs",
@@ -157,6 +158,7 @@ export default [
     techstack: [
       "React",
       "NextJS",
+      "JavaScript",
       "Node.js",
       "CSS",
       "APIs",

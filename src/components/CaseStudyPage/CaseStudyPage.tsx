@@ -17,7 +17,9 @@ function CaseStudyPage({ project }: CaseStudyPageProps) {
               Case Study
             </span>
             <span className="text-gray-900">{project.name}</span>
-            <span className="text-sm text-gray-600">{project.tagline}</span>
+            {project.tagline && (
+              <span className="text-sm text-gray-600">{project.tagline}</span>
+            )}
           </div>
 
           <div className="flex flex-col md:items-end items-start gap-2 md:ml-auto mt-2 md:mt-0">
