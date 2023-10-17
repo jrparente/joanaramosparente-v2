@@ -18,11 +18,11 @@ function App() {
       <main className="font-body w-full relative">
         <Navbar />
         <Routes>
-          <Route path="*" element={<NotFound />} />
-          <Route path="/" index element={<Home />} />{" "}
+          <Route path="/" index element={<Home />} />
           <Route path="/case-study">
             <Route path=":id" element={<ProjectCaseStudy />} />
           </Route>
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
       <Footer />
