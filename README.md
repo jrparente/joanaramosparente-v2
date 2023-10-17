@@ -1,27 +1,37 @@
-# React + TypeScript + Vite
+# Joana Ramos Parente Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the repository for my personal portfolio website, designed to showcase my skills, projects, and experiences. The site is constantly evolving as I continue to add new features and updates.
 
-Currently, two official plugins are available:
+## Quick Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This portfolio is built with a focus on modern web technologies and best practices. It leverages Vite for ultra-fast bundling and React for component-based architecture. The design is responsive and mobile-first, with a clean UI courtesy of Tailwind CSS.
 
-## Expanding the ESLint configuration
+Visit [joana-parente.netlify.app](https://joana-parente.netlify.app/) to see it live!
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Tech Stack
 
-- Configure the top-level `parserOptions` property like this:
+- Vite: Build tool that offers fast development and optimized production bundles.
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+- React: JavaScript library for building the user interface.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Tailwind CSS: Utility-first CSS framework for rapid UI development.
+
+- React Router: Standard routing library for React.
+
+## Features
+
+- Mobile-First Approach: Designed for mobile screens and scales elegantly to larger screens.
+
+- Dynamic Routing: Using React Router for navigating between pages.
+
+- Custom 404 Page: In case of an error, redirects to Homepage after 5 seconds.
+
+## Roadmap
+
+- Design Enhancements: Plans to incorporate scroll animations, hover effects, and other interactive design elements.
+
+- Likes Component: Upcoming feature to add a "Likes" system for Project Cards, which will save up to 3 likes per user in a database.
+
+## Feedback
+
+If you have any feedback, please reach out to [me](mailto:jrparente@gmail.com)!
