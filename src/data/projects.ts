@@ -7,6 +7,10 @@ export default [
     iscasestudy: true,
     date: "2023-10-15",
     name: "Farol Discover 🗺️",
+    tagline: "A Travel-focused website with dynamic content and a custom CMS",
+    problemStatement:
+      "Creating a user-friendly travel website that allows easy content management and dynamic content fetching.",
+    role: "Full-stack Developer",
     shortDescription:
       "Farol Discover is a travel-focused website with a custom CMS, dynamic content fetching, and a responsive design, built using React and Next.js.",
     description:
@@ -40,6 +44,7 @@ export default [
       "Dynamic Data Fetching: Gained experience in using GROQ for querying data dynamically.",
       "UI/UX Design: Focused on creating a seamless and intuitive user interface.",
     ],
+    results: [],
   },
   {
     id: 5,

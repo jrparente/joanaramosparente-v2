@@ -36,7 +36,7 @@ function ProjectCard({ project }: ProjectCardProps) {
         )}
         <h3 className="text-2xl font-bold mb-4">{project.name}</h3>
         <p className="text-sm mb-4 sm:text-base text-gray-600">
-          {project.shortDescription || project.description}
+          {project.tagline || project.shortDescription || project.description}
         </p>
         <ul className="flex flex-wrap text-xs rounded text-gray-600 gap-x-2 gap-y-2 font-mono mb-4">
           {project.techstack.map((tech) => (

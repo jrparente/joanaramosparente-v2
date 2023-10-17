@@ -11,21 +11,30 @@ function CaseStudyPage({ project }: CaseStudyPageProps) {
   return (
     <>
       <section className="min-h-screen mt-20 md:mt-24 space-y-8">
-        <header className="max-w-screen-xl mx-auto px-5 xs:px-10 sm:px-12 md:px-24 grid grid-cols-1 sm:grid-cols-2 items-start sm:items-end">
+        <header className="max-w-screen-xl mx-auto px-5 xs:px-10 sm:px-12 md:px-24 grid grid-cols-1 md:grid-cols-2 items-start md:items-end">
           <div className="flex flex-col items-start text-4xl font-semibold gap-2">
             <span className="text-xs uppercase font-mono text-primary-700 bg-primary-100 px-2 py-1 inline-block rounded">
               Case Study
             </span>
             <span className="text-gray-900">{project.name}</span>
+            <span className="text-sm text-gray-600">{project.tagline}</span>
           </div>
-          <span className="sm:ml-auto mt-2 sm:mt-0 text-gray-600 font-semibold text-xs">
-            Last Updated on: {project.date}
-          </span>
+
+          <div className="flex flex-col md:items-end items-start gap-2 md:ml-auto mt-2 md:mt-0">
+            {project.role && (
+              <span className="text-gray-700 bg-gray-100 font-semibold text-sm uppercase font-mono px-2 py-1 inline-block rounded">
+                Role: {project.role}
+              </span>
+            )}
+            <span className=" text-gray-600 font-semibold text-xs">
+              Live Since: {project.date}
+            </span>
+          </div>
         </header>
 
         <article className="bg-gray-100 mb-12 w-full">
           <div className="max-w-screen-xl mx-auto px-5 xs:px-10 sm:px-12 md:px-24 grid grid-cols-1 lg:grid-cols-6 gap-8">
-            <aside className="col-span-6 lg:col-span-2 lg:row-span-2 py-6 lg:order-2">
+            <aside className="col-span-6 lg:col-span-2 lg:row-span-2 py-6 lg:order-2  flex items-center justify-center">
               <div className="screen-custom">
                 <div
                   className="viewport"
@@ -37,6 +46,16 @@ function CaseStudyPage({ project }: CaseStudyPageProps) {
             <section className="col-span-6 lg:col-span-4 pt-6 lg:order-1">
               <h2 className="text-2xl font-bold mb-4">Description</h2>
               <p className="text-lg">{project.description}</p>
+              {project.problemStatement && (
+                <>
+                  <h2 className="text-xl font-semibold mb-2">
+                    Problem Statement
+                  </h2>
+                  <p className="text-base text-gray-700 mb-4">
+                    {project.problemStatement}
+                  </p>
+                </>
+              )}
             </section>
 
             <section className="col-span-6 lg:col-span-4 pb-6  lg:order-3">

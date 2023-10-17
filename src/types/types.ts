@@ -13,7 +13,10 @@ export interface Project {
   date: string;
   name: string;
   shortDescription?: string;
+  tagline: string;
   description: string;
+  problemStatement: string;
+  role: string;
   image: string;
   links: Links;
   techstack: string[];
