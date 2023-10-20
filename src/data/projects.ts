@@ -21,6 +21,7 @@ export default [
       live: "https://www.faroldiscover.pt/",
     },
     categories: ["Personal/Company Website"],
+    mainTechnologies: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
     techstack: [
       "React",
       "Next.js",
@@ -68,6 +69,13 @@ export default [
       live: "https://www.aibusinessgenie.pt/",
     },
     categories: ["Saas (Software as a Service)", "CRUD Application"],
+    mainTechnologies: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "APIs",
+    ],
     techstack: [
       "React",
       "Next.js",
@@ -120,7 +128,15 @@ export default [
       github: "https://github.com/jrparente/my-book-library",
       live: "https://mybooklibrary.vercel.app/",
     },
-    categories: ["CRUD Application"],
+    categories: ["CRUD Application", "Mobile App"],
+    mainTechnologies: [
+      "React",
+      "Next.js",
+      "JavaScript",
+      "React Native",
+      "Tailwind CSS",
+      "APIs",
+    ],
     techstack: [
       "React",
       "Next.js",
@@ -171,6 +187,14 @@ export default [
       live: "https://ai-travel-agent.netlify.app/",
     },
     categories: ["Saas (Software as a Service)", "CRUD Application"],
+    mainTechnologies: [
+      "React",
+      "NextJS",
+      "JavaScript",
+      "Node.js",
+      "CSS",
+      "APIs",
+    ],
     techstack: [
       "React",
       "NextJS",
@@ -218,6 +242,7 @@ export default [
       live: "",
     },
     categories: ["Personal/Company Website"],
+    mainTechnologies: ["React", "TypeScript", "Tailwind CSS"],
     techstack: ["React", "TypeScript", "React Router", "Vite", "Tailwind CSS"],
   },
   {
@@ -239,6 +264,7 @@ export default [
       live: "https://simple-dinner-generator.netlify.app/",
     },
     categories: ["CRUD Application"],
+    mainTechnologies: ["React", "CSS", "JavaScript"],
     techstack: ["React", "CSS", "JavaScript"],
   },
 ];

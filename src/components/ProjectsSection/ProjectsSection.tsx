@@ -20,6 +20,15 @@ function ProjectsSection() {
 
   const uniqueCategories = Array.from(allCategories);
 
+  const allTechnologies = projects.reduce((mainTechnologies, project) => {
+    project.mainTechnologies.forEach((category) =>
+      mainTechnologies.add(category)
+    );
+    return mainTechnologies;
+  }, new Set());
+
+  const uniqueTechnologies = Array.from(allTechnologies);
+
   useEffect(() => {
     let filtered = [...projects];
 
@@ -175,102 +184,24 @@ function ProjectsSection() {
                   <li>
                     <hr />
                   </li>
-                  <li>
-                    <div className="flex items-center">
-                      <input
-                        id="reactCheckbox"
-                        type="checkbox"
-                        className="w-4 h-4 text-primary-600 bg-gray-100 border-gray-300 rounded focus:ring-primary-500 focus:ring-2"
-                        onChange={() => toggleTech("React")}
-                      />
-                      <label
-                        htmlFor="reactCheckbox"
-                        className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-                      >
-                        React
-                      </label>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="flex items-center">
-                      <input
-                        id="nextJsCheckbox"
-                        type="checkbox"
-                        className="w-4 h-4 text-primary-600 bg-gray-100 border-gray-300 rounded focus:ring-primary-500 focus:ring-2"
-                        onChange={() => toggleTech("Next.js")}
-                      />
-                      <label
-                        htmlFor="nextJsCheckbox"
-                        className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-                      >
-                        Next.js
-                      </label>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="flex items-center">
-                      <input
-                        id="javascriptCheckbox"
-                        type="checkbox"
-                        className="w-4 h-4 text-primary-600 bg-gray-100 border-gray-300 rounded focus:ring-primary-500 focus:ring-2"
-                        onChange={() => toggleTech("JavaScript")}
-                      />
-                      <label
-                        htmlFor="javascriptCheckbox"
-                        className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-                      >
-                        JavaScript
-                      </label>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="flex items-center">
-                      <input
-                        id="typescriptCheckbox"
-                        type="checkbox"
-                        className="w-4 h-4 text-primary-600 bg-gray-100 border-gray-300 rounded focus:ring-primary-500 focus:ring-2"
-                        onChange={() => toggleTech("TypeScript")}
-                      />
-                      <label
-                        htmlFor="typescriptCheckbox"
-                        className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-                      >
-                        TypeScript
-                      </label>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="flex items-center">
-                      <input
-                        id="tailwindCheckbox"
-                        type="checkbox"
-                        className="w-4 h-4 text-primary-600 bg-gray-100 border-gray-300 rounded focus:ring-primary-500 focus:ring-2"
-                        onChange={() => toggleTech("Tailwind CSS")}
-                      />
-                      <label
-                        htmlFor="tailwindCheckbox"
-                        className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-                      >
-                        Tailwind CSS
-                      </label>
-                    </div>
-                  </li>{" "}
-                  <li>
-                    <div className="flex items-center">
-                      <input
-                        id="apisCheckbox"
-                        type="checkbox"
-                        className="w-4 h-4 text-primary-600 bg-gray-100 border-gray-300 rounded focus:ring-primary-500 focus:ring-2"
-                        onChange={() => toggleTech("APIs")}
-                      />
-                      <label
-                        htmlFor="apisCheckbox"
-                        className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-                      >
-                        APIs
-                      </label>
-                    </div>
-                  </li>
+                  {uniqueTechnologies.map((tech) => (
+                    <li>
+                      <div className="flex items-center">
+                        <input
+                          id={`${tech}Checkbox`}
+                          type="checkbox"
+                          className="w-4 h-4 text-primary-600 bg-gray-100 border-gray-300 rounded focus:ring-primary-500 focus:ring-2"
+                          onChange={() => toggleTech(tech as string)}
+                        />
+                        <label
+                          htmlFor={`${tech}Checkbox`}
+                          className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                        >
+                          {tech as string}
+                        </label>
+                      </div>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
