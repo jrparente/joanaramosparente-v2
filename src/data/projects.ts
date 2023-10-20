@@ -20,6 +20,7 @@ export default [
       github: "https://github.com/jrparente/farol-discover",
       live: "https://www.faroldiscover.pt/",
     },
+    categories: ["Personal/Company Website"],
     techstack: [
       "React",
       "Next.js",
@@ -66,6 +67,7 @@ export default [
       github: "",
       live: "https://www.aibusinessgenie.pt/",
     },
+    categories: ["Saas (Software as a Service)", "CRUD Application"],
     techstack: [
       "React",
       "Next.js",
@@ -118,6 +120,7 @@ export default [
       github: "https://github.com/jrparente/my-book-library",
       live: "https://mybooklibrary.vercel.app/",
     },
+    categories: ["CRUD Application"],
     techstack: [
       "React",
       "Next.js",
@@ -167,6 +170,7 @@ export default [
       github: "",
       live: "https://ai-travel-agent.netlify.app/",
     },
+    categories: ["Saas (Software as a Service)", "CRUD Application"],
     techstack: [
       "React",
       "NextJS",
@@ -213,6 +217,7 @@ export default [
       github: "https://github.com/jrparente/joanaramosparente",
       live: "",
     },
+    categories: ["Personal/Company Website"],
     techstack: ["React", "TypeScript", "React Router", "Vite", "Tailwind CSS"],
   },
   {
@@ -233,6 +238,7 @@ export default [
       github: "https://github.com/jrparente/app-simple-dinners",
       live: "https://simple-dinner-generator.netlify.app/",
     },
+    categories: ["CRUD Application"],
     techstack: ["React", "CSS", "JavaScript"],
   },
 ];
