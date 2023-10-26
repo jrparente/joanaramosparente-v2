@@ -15,7 +15,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <main className="font-body w-full relative">
+      <main className="font-body w-full relative flex flex-col">
         <Navbar />
         <Routes>
           <Route path="/" index element={<Home />} />
