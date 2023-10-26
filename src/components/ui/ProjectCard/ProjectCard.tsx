@@ -8,7 +8,7 @@ interface ProjectCardProps {
 
 function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <div className="bg-white py-4 flex flex-col gap-4">
+    <div className="bg-white py-4 flex flex-col md:flex-row lg:flex-col gap-8">
       <div className="screen">
         {project.iscasestudy ? (
           <a href={`/case-study/${project.id}`}>
