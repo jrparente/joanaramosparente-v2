@@ -15,7 +15,6 @@ body,
 }
 
 html {
-  scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
 }
 
@@ -104,10 +103,4 @@ p {
 
 .viewport:hover {
   background-position: 0 100%;
-}
-
-/**/
-
-.section {
-  scroll-snap-align: start;
 }

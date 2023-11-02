@@ -21,10 +21,7 @@ const marketingSkills: string[] = [
 
 function AboutSection() {
   return (
-    <section
-      className="section min-h-screen flex flex-col justify-center pt-36 mt-36 lg:pt-0 lg:mt-0"
-      id="about"
-    >
+    <section className="min-h-screen" id="about">
       <div className="max-w-screen-xl mx-auto flex flex-col justify-center px-5 xs:px-10 sm:px-12 md:px-24 py-24">
         <h2 className="text-2xl sm:text-4xl text-gray-900 font-extrabold pb-1.5 sm:pb-3">
           About Me
