@@ -257,7 +257,7 @@ export default [
     tagline: "A Personal Meal Planner created with the MERN Stack.",
     problemStatement:
       "Simplify Meal Planning with a Full-stack Web App. The goal is to have a well-rounded, but simple, meal planning solution.",
-    image: "./simple-dinners.png",
+    image: "/simple-dinners.png",
     shortDescription:
       "A comprehensive meal planning app designed for simplicity. Automatically generate meal ideas, add your own recipes, and create a shopping list. Tailored for those who prefer straightforward meals.",
     description:
@@ -265,6 +265,7 @@ export default [
     links: {
       github: "https://github.com/jrparente/app-simple-dinners",
       live: "https://simple-dinner-generator.netlify.app/",
+      backend: "https://github.com/jrparente/app-simple-dinners-server",
     },
     categories: ["CRUD Application"],
     mainTechnologies: ["React", "CSS Modules", "JavaScript"],

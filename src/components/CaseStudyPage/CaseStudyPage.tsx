@@ -40,7 +40,7 @@ function CaseStudyPage({ project }: CaseStudyPageProps) {
               <div className="screen-custom">
                 <div
                   className="viewport"
-                  style={{ backgroundImage: `url('${project.image}')` }}
+                  style={{ backgroundImage: `url(${project.image})` }}
                 ></div>
               </div>
             </aside>
@@ -72,6 +72,48 @@ function CaseStudyPage({ project }: CaseStudyPageProps) {
           </div>
         </article>
 
+        <section className="w-full flex flex-wrap gap-4 max-w-screen-xl mx-auto px-5 xs:px-10 sm:px-12 md:px-24">
+          {project.links.github && (
+            <a
+              href={project.links.github}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button>
+                <div className="flex gap-2 items-center">
+                  <Github className="w-4 h-4" /> Frontend Repository
+                </div>
+              </Button>
+            </a>
+          )}
+          {project.links.backend && (
+            <a
+              href={project.links.backend}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button>
+                <div className="flex gap-2 items-center">
+                  <Github className="w-4 h-4" /> Backend Repository
+                </div>
+              </Button>
+            </a>
+          )}
+          {project.links.live && (
+            <a
+              href={project.links.live}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button variant="secondary">
+                <div className="flex gap-2 items-center">
+                  <ExternalLink className="w-4 h-4" /> Live Website
+                </div>
+              </Button>
+            </a>
+          )}
+        </section>
+
         <section className="max-w-screen-xl mx-auto px-5 xs:px-10 sm:px-12 md:px-24 grid grid-cols-1 lg:grid-cols-6 gap-8">
           <div className="col-span-6 py-6">
             {[
@@ -98,34 +140,6 @@ function CaseStudyPage({ project }: CaseStudyPageProps) {
             ))}
           </div>
         </section>
-      </section>
-      <section className="flex flex-wrap gap-4 max-w-screen-xl mx-auto px-5 xs:px-10 sm:px-12 md:px-24">
-        {project.links.github && (
-          <a
-            href={project.links.github}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Button>
-              <div className="flex gap-2 items-center">
-                <Github className="w-4 h-4" /> GitHub
-              </div>
-            </Button>
-          </a>
-        )}
-        {project.links.live && (
-          <a
-            href={project.links.live}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Button>
-              <div className="flex gap-2 items-center">
-                <ExternalLink className="w-4 h-4" /> Live Website
-              </div>
-            </Button>
-          </a>
-        )}
       </section>
     </>
   );

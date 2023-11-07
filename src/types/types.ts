@@ -3,6 +3,7 @@ export interface Links {
   live?: string;
   instagram?: string;
   casestudy?: string;
+  backend?: string;
 }
 
 export interface Project {
