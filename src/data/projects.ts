@@ -250,7 +250,7 @@ export default [
     live: true,
     isFeatured: false,
     isPublicRepository: true,
-    iscasestudy: false,
+    iscasestudy: true,
     role: "Full-stack Developer",
     date: "2023-01-15",
     name: "Simple Dinners Generator 🍽️",
