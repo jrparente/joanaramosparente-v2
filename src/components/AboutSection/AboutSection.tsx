@@ -12,6 +12,8 @@ const technicalSkills: string[] = [
   "NextJS",
   "SQL",
   "MongoDB",
+  "Express.js",
+  "Git",
 ];
 const marketingSkills: string[] = [
   "SEO Best Practices",
@@ -31,13 +33,24 @@ function AboutSection() {
             <p>
               Full-stack web developer, specializing in the MERN stack, with
               over 10 years of professional experience as an Account and
-              Business Manager in the Internet sector
+              Business Manager in the Internet sector.
             </p>
             <p>
               Skilled in business management, sales, e-commerce, and digital
               marketing. A dedicated lifelong learner passionate about
               problem-solving, technology, and continuous professional
               development.
+            </p>
+            <p>
+              Currently enrolled in{" "}
+              <span className="font-bold">
+                MIT xPRO - Professional Certificate in Coding: Full Stack
+                Development with MERN
+              </span>
+              , ending in August 2024. The program covers foundational web
+              development skills, dives into front-end expertise with React, and
+              solidifies back-end proficiency with MongoDB, ExpressJS, and
+              NodeJS.
             </p>
             <article className="space-y-4">
               <h3 className="text-lg font-semibold">Key Skills</h3>
