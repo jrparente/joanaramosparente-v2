@@ -1,4 +1,4 @@
-import { Code, Globe, Feather, DollarSign, Cpu, Database } from "lucide-react";
+import { Code, Feather, DollarSign, Cpu } from "lucide-react";
 
 function SkillBar() {
   return (
@@ -15,12 +15,6 @@ function SkillBar() {
         </div>
         <span className="ml-2">React</span>
       </div>
-      {/* <div className="flex flex-row items-center my-2 lg:my-0">
-        <div className="bg-primary-500/10 p-2 rounded-md">
-          <Database className="w-5 h-5 text-primary-500" />
-        </div>
-        <span className="ml-2">SQL</span>
-      </div> */}
       <div className="flex flex-row items-center my-2 lg:my-0">
         <div className="bg-primary-500/10 p-2 rounded-md">
           <Feather className="w-5 h-5 text-primary-500" />
