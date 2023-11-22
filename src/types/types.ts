@@ -7,10 +7,11 @@ export interface Links {
 }
 
 export interface Project {
-  id: number;
+  id: string;
   live: boolean;
   isFeatured: boolean;
   iscasestudy: boolean;
+  type: string;
   date: string;
   name: string;
   shortDescription?: string;

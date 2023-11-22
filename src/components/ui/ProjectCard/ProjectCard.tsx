@@ -31,10 +31,19 @@ function ProjectCard({ project }: ProjectCardProps) {
       <div>
         {project.isFeatured && (
           <p className="text-xs uppercase font-mono text-primary-700 bg-primary-100 px-2 py-1 inline-block rounded">
-            Featured Project
+            Featured
+          </p>
+        )}{" "}
+        {project.type === "Client Project" ? (
+          <p className="text-xs uppercase font-mono text-gray-700 bg-gray-100 px-2 py-1 inline-block rounded">
+            Client Project
+          </p>
+        ) : (
+          <p className="text-xs uppercase font-mono  text-gray-700 bg-gray-100 px-2 py-1 inline-block rounded">
+            Personal Project
           </p>
         )}
-        <h3 className="text-2xl font-bold mb-4">{project.name}</h3>
+        <h3 className="text-2xl font-bold my-4">{project.name}</h3>
         <p className="text-sm mb-4 sm:text-base text-gray-600">
           {project.shortDescription || project.description}
         </p>

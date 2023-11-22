@@ -1,12 +1,13 @@
 export default [
   {
-    id: 6,
+    id: "farol-discover",
     live: true,
     isFeatured: true,
     isPublicRepository: true,
     iscasestudy: true,
     role: "Full-stack Developer",
     date: "2023-10-15",
+    type: "Client Project",
     name: "Farol Discover 🗺️",
     tagline: "A Travel-focused Website with Dynamic Content and a Custom CMS",
     problemStatement:
@@ -111,12 +112,13 @@ export default [
   //   ],
   // },
   {
-    id: 4,
+    id: "library-management-dashboard",
     live: true,
     isFeatured: true,
     iscasestudy: true,
     isPublicRepository: true,
     role: "Full-stack Developer",
+    type: "Personal Project",
     date: "2023-10-15",
     name: "Library Management Dashboard 📚",
     shortDescription:
@@ -169,12 +171,13 @@ export default [
     ],
   },
   {
-    id: 3,
+    id: "ai-travel-agent",
     live: true,
     isFeatured: false,
     iscasestudy: true,
     isPublicRepository: false,
     role: "Full-stack Developer",
+    type: "Personal Project",
     date: "2023-08-15",
     name: "AI Travel Planner ✈️",
     shortDescription:
@@ -246,12 +249,13 @@ export default [
   //   techstack: ["React", "TypeScript", "React Router", "Vite", "Tailwind CSS"],
   // },
   {
-    id: 1,
+    id: "simple-dinners-generator",
     live: true,
     isFeatured: false,
     isPublicRepository: true,
     iscasestudy: true,
     role: "Full-stack Developer",
+    type: "Personal Project",
     date: "2023-01-15",
     name: "Simple Dinners Generator 🍽️",
     tagline: "A Personal Meal Planner created with the MERN Stack.",
