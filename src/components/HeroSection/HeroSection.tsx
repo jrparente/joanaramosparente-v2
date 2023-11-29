@@ -17,8 +17,8 @@ function HeroSection() {
           <p>
             Portugal-based Full-Stack Developer, transitioning from a career in
             account management and digital marketing. With a deep understanding
-            of business needs and client relations, I bring a unique perspective
-            to the world of code.
+            of business needs and client relations, I aim to bring a unique
+            perspective to the world of code.
           </p>
           <a href="#contact">
             <Button>Contact Me</Button>
