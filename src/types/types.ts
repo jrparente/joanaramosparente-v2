@@ -10,6 +10,7 @@ export interface Project {
   id: string;
   live: boolean;
   isFeatured: boolean;
+  status: string;
   iscasestudy: boolean;
   type: string;
   date: string;

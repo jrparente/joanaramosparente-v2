@@ -29,20 +29,35 @@ function ProjectCard({ project }: ProjectCardProps) {
         )}
       </div>
       <div>
-        {project.isFeatured && (
-          <p className="text-xs uppercase font-mono text-primary-700 bg-primary-100 px-2 py-1 inline-block rounded">
-            Featured
-          </p>
-        )}{" "}
-        {project.type === "Client Project" ? (
-          <p className="text-xs uppercase font-mono text-gray-700 bg-gray-100 px-2 py-1 inline-block rounded">
-            Client Project
-          </p>
-        ) : (
-          <p className="text-xs uppercase font-mono  text-gray-700 bg-gray-100 px-2 py-1 inline-block rounded">
-            Personal Project
-          </p>
-        )}
+        <div className="flex items-center flex-wrap gap-2">
+          {project.status && (
+            <span
+              className={`text-xs uppercase font-mono text-gray-700 bg-gray-100 px-2 py-1 inline-block rounded ${
+                project.status === "Building..."
+                  ? "bg-yellow-100 text-yellow-700"
+                  : project.status === "On Hold"
+                  ? "bg-orange-100 text-orange-700"
+                  : "bg-green-100 text-green-700"
+              }`}
+            >
+              {project.status}
+            </span>
+          )}
+          {project.isFeatured && (
+            <span className="text-xs uppercase font-mono text-primary-700 bg-primary-100 px-2 py-1 inline-block rounded">
+              Featured
+            </span>
+          )}
+          {project.type === "Client Project" ? (
+            <span className="text-xs uppercase font-mono text-gray-700 bg-gray-100 px-2 py-1 inline-block rounded my-0">
+              Client Project
+            </span>
+          ) : (
+            <span className="text-xs uppercase font-mono  text-gray-700 bg-gray-100 px-2 py-1 inline-block rounded my-0">
+              Personal Project
+            </span>
+          )}
+        </div>
         <h3 className="text-2xl font-bold my-4">{project.name}</h3>
         <p className="text-sm mb-4 sm:text-base text-gray-600">
           {project.shortDescription || project.description}
@@ -54,7 +69,7 @@ function ProjectCard({ project }: ProjectCardProps) {
             </li>
           ))}
         </ul>
-        <div className="flex flex-wrap gap-2">
+        <div className="flex items-center flex-wrap gap-2">
           {project.iscasestudy && (
             <a href={`/case-study/${project.id}`}>
               <Button>
