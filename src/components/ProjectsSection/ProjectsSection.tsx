@@ -8,10 +8,12 @@ function ProjectsSection() {
   const [filteredProjects, setFilteredProjects] = useState(projects);
   const [filterTechStackOpen, setFilterTechStackOpen] = useState(false);
   const [filterCategoryOpen, setFilterCategoryOpen] = useState(false);
+  const [projectTypeOpen, setProjectTypeOpen] = useState(false);
   const [selectedTech, setSelectedTech] = useState<string[]>([]);
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
   const [isLive, setIsLive] = useState(false);
   const [isCaseStudy, setIsCaseStudy] = useState(false);
+  const [projectType, setProjectType] = useState("");
 
   const allCategories = projects.reduce((categories, project) => {
     project.categories.forEach((category) => categories.add(category));
@@ -55,11 +57,20 @@ function ProjectsSection() {
       );
     }
 
+    // Filter by project type
+    if (projectType !== "") {
+      filtered = filtered.filter(
+        (project) =>
+          (projectType === "Client" && project.type === "Client Project") ||
+          (projectType === "Personal" && project.type === "Personal Project")
+      );
+    }
+
     // Sort by featured
     filtered.sort((a, b) => (b.isFeatured ? 1 : 0) - (a.isFeatured ? 1 : 0));
 
     setFilteredProjects(filtered);
-  }, [selectedTech, selectedCategories, isLive, isCaseStudy]);
+  }, [selectedTech, selectedCategories, isLive, isCaseStudy, projectType]);
 
   function handleFilterByTechStack() {
     setFilterTechStackOpen((prev) => !prev);
@@ -67,6 +78,10 @@ function ProjectsSection() {
 
   function handleFilterByCategory() {
     setFilterCategoryOpen((prev) => !prev);
+  }
+
+  function handleFilterByProjectType() {
+    setProjectTypeOpen((prev) => !prev);
   }
 
   const toggleTech = (tech: string) => {
@@ -81,6 +96,10 @@ function ProjectsSection() {
         ? prev.filter((c) => c !== category)
         : [...prev, category]
     );
+  };
+
+  const toggleProjectType = (type: string) => {
+    setProjectType((prev) => (prev === type ? "" : type));
   };
 
   return (
@@ -100,12 +119,48 @@ function ProjectsSection() {
 
           <div className="flex flex-row flex-wrap items-center justify-end gap-2">
             <div className="relative">
+              <Button onClick={handleFilterByProjectType}>
+                Filter by Project Type
+                <ChevronDown className="w-4 h-4 ml-2.5" />
+              </Button>
+              <div
+                id="dropdownProjectType"
+                className={`z-10 w-48 bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600 absolute top-12 right-0
+           ${projectTypeOpen ? "" : "hidden"}`}
+              >
+                <ul
+                  className="p-3 space-y-3 text-sm text-gray-700 dark:text-gray-200"
+                  aria-labelledby="dropdownProjectTypeButton"
+                >
+                  {["Client", "Personal"].map((type) => (
+                    <li key={type}>
+                      <div className="flex items-center">
+                        <input
+                          id={`${type}ProjectTypeCheckbox`}
+                          type="checkbox"
+                          className="w-4 h-4 text-primary-600 bg-gray-100 border-gray-300 rounded focus:ring-primary-500 focus:ring-2"
+                          onChange={() => toggleProjectType(type)}
+                        />
+                        <label
+                          htmlFor={`${type}ProjectTypeCheckbox`}
+                          className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                        >
+                          {type}
+                        </label>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            <div className="relative">
               <Button onClick={handleFilterByCategory}>
                 Filter by Category
                 <ChevronDown className="w-4 h-4 ml-2.5" />
               </Button>
               <div
-                id="dropdownDefaultCheckbox"
+                id="dropdownFilterByCategory"
                 className={`z-10 w-64 bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600 absolute top-12 right-0
               ${filterCategoryOpen ? "" : "hidden"}`}
               >
