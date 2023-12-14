@@ -100,7 +100,12 @@ function ProjectCard({ project }: ProjectCardProps) {
             >
               <Button variant="secondary">
                 <div className="flex gap-2 items-center">
-                  <ExternalLink className="w-4 h-4" /> Live Site
+                  <ExternalLink className="w-4 h-4" />{" "}
+                  {project.live
+                    ? "Live Site"
+                    : project.isDemo
+                    ? "Demo site"
+                    : "Live Site"}
                 </div>
               </Button>
             </a>

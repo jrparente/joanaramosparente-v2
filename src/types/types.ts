@@ -9,6 +9,7 @@ export interface Links {
 export interface Project {
   id: string;
   live: boolean;
+  isDemo?: boolean;
   isFeatured: boolean;
   status: string;
   iscasestudy: boolean;

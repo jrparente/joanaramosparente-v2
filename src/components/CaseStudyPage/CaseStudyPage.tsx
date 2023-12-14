@@ -12,22 +12,48 @@ function CaseStudyPage({ project }: CaseStudyPageProps) {
     <>
       <section className="min-h-screen mt-20 md:mt-24 space-y-8">
         <header className="max-w-screen-xl mx-auto px-5 xs:px-10 sm:px-12 md:px-24 grid grid-cols-1 md:grid-cols-2 items-start md:items-end">
-          <div className="flex flex-col items-start text-4xl font-semibold gap-2">
-            <span className="text-xs uppercase font-mono text-primary-700 bg-primary-100 px-2 py-1 inline-block rounded">
-              Case Study
+          <div className="flex flex-col items-start gap-3">
+            <h1 className="text-base text-gray-600 font-normal">Case Study</h1>
+            <span className="text-4xl text-gray-900 font-extrabold ">
+              {project.name}
             </span>
-            <span className="text-gray-900">{project.name}</span>
             {project.tagline && (
-              <span className="text-sm text-gray-600">{project.tagline}</span>
+              <span className="text-base text-gray-600 ">
+                {project.tagline}
+              </span>
             )}
+            <div className="flex items-center flex-wrap gap-2">
+              {project.status && (
+                <span
+                  className={`text-xs uppercase font-mono text-gray-700 bg-gray-100 px-2 py-1 inline-block rounded ${
+                    project.status === "Building..."
+                      ? "bg-yellow-100 text-yellow-700"
+                      : project.status === "On Hold"
+                      ? "bg-orange-100 text-orange-700"
+                      : "bg-green-100 text-green-700"
+                  }`}
+                >
+                  {project.status}
+                </span>
+              )}
+              {project.isFeatured && (
+                <span className="text-xs uppercase font-mono text-primary-700 bg-primary-100 px-2 py-1 inline-block rounded">
+                  Featured
+                </span>
+              )}
+              {project.type === "Client Project" ? (
+                <span className="text-xs uppercase font-mono text-gray-700 bg-gray-100 px-2 py-1 inline-block rounded my-0">
+                  Client Project
+                </span>
+              ) : (
+                <span className="text-xs uppercase font-mono  text-gray-700 bg-gray-100 px-2 py-1 inline-block rounded my-0">
+                  Personal Project
+                </span>
+              )}
+            </div>
           </div>
 
           <div className="flex flex-col md:items-end items-start gap-2 md:ml-auto mt-2 md:mt-0">
-            {project.role && (
-              <span className="text-gray-700 bg-gray-100 font-semibold text-sm uppercase font-mono px-2 py-1 inline-block rounded">
-                Role: {project.role}
-              </span>
-            )}
             <span className=" text-gray-600 font-semibold text-xs">
               Live Since: {project.date}
             </span>
@@ -46,16 +72,26 @@ function CaseStudyPage({ project }: CaseStudyPageProps) {
             </aside>
 
             <section className="col-span-6 lg:col-span-4 pt-6 lg:order-1">
-              <h2 className="text-2xl font-bold mb-4">Description</h2>
-              <p className="text-lg">{project.description}</p>
+              <h2 className="text-xl font-semibold">Description</h2>
+              <span className="text-base text-gray-700">
+                {project.description}
+              </span>
               {project.problemStatement && (
                 <>
-                  <h2 className="text-xl font-semibold mb-2">
+                  <h2 className="text-xl font-semibold mt-6">
                     Problem Statement
                   </h2>
-                  <p className="text-base text-gray-700 mb-4">
+                  <span className="text-base text-gray-700">
                     {project.problemStatement}
-                  </p>
+                  </span>
+                </>
+              )}
+              {project.role && (
+                <>
+                  <h2 className="text-xl font-semibold mt-6">Role: </h2>
+                  <span className="text-base text-gray-700">
+                    {project.role}
+                  </span>
                 </>
               )}
             </section>
@@ -107,7 +143,10 @@ function CaseStudyPage({ project }: CaseStudyPageProps) {
             >
               <Button variant="secondary">
                 <div className="flex gap-2 items-center">
-                  <ExternalLink className="w-4 h-4" /> Live Website
+                  <ExternalLink className="w-4 h-4" />{" "}
+                  {project.live
+                    ? "Live Website"
+                    : project.isDemo && "Demo Website"}
                 </div>
               </Button>
             </a>
