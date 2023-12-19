@@ -27,4 +27,5 @@ export interface Project {
   features?: string[];
   codeHighlights?: string[];
   challengesAndLearnings?: string[];
+  imageGallery?: { imgUrl: string; alt: string }[];
 }

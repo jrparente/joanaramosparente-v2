@@ -11,14 +11,14 @@ function CaseStudyPage({ project }: CaseStudyPageProps) {
   return (
     <>
       <section className="min-h-screen mt-20 md:mt-24 space-y-8">
-        <header className="max-w-screen-xl mx-auto px-5 xs:px-10 sm:px-12 md:px-24 grid grid-cols-1 md:grid-cols-2 items-start md:items-end">
+        <header className="max-w-screen-xl mx-auto px-5 xs:px-10 sm:px-12 md:px-24 ">
           <div className="flex flex-col items-start gap-3">
-            <h1 className="text-base text-gray-600 font-normal">Case Study</h1>
-            <span className="text-4xl text-gray-900 font-extrabold ">
+            <h1 className="text-base text-gray-600 font-normal">
               {project.name}
-            </span>
+            </h1>
+
             {project.tagline && (
-              <span className="text-base text-gray-600 ">
+              <span className="text-4xl text-gray-900 font-extrabold ">
                 {project.tagline}
               </span>
             )}
@@ -177,6 +177,32 @@ function CaseStudyPage({ project }: CaseStudyPageProps) {
                 })}
               </div>
             ))}
+          </div>
+        </section>
+
+        <section className="max-w-screen-xl mx-auto px-5 xs:px-10 sm:px-12 md:px-24 grid grid-cols-1 lg:grid-cols-6 gap-8">
+          <div className="col-span-6 py-6">
+            {project.imageGallery && project.imageGallery.length > 0 && (
+              <>
+                <p className="text-2xl font-bold mb-4 text-gray-900">
+                  Project Image Gallery
+                </p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                  {project.imageGallery.map((image, idx) => (
+                    <div key={idx} className="relative">
+                      <img
+                        src={image.imgUrl}
+                        alt={image.alt}
+                        className="w-full h-full object-cover rounded-lg"
+                      />
+                      <span className="absolute bottom-2 left-2 bg-gray-100 px-2 py-1 rounded text-xs">
+                        {image.alt}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </>
+            )}
           </div>
         </section>
       </section>

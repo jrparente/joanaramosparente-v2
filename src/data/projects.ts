@@ -10,13 +10,13 @@ export default [
     date: "2023-10-15",
     type: "Client Project",
     name: "Farol Discover 🗺️",
-    tagline: "A Travel-focused Website with Dynamic Content and a Custom CMS",
+    tagline: "A Company Marketing Website with an easy-to-use custom CMS",
     problemStatement:
-      "Creating a user-friendly travel website that allows easy content management and dynamic content fetching.",
+      "Creating a user-friendly company marketing website that allows easy content management and dynamic content fetching.",
     shortDescription:
-      "Farol Discover is a travel-focused website offering a custom CMS for dynamic content management, and a responsive design, built using React and Next.js.",
+      "Farol Discover is a company marketing website offering a custom CMS for dynamic content management, and a responsive design, built using React and Next.js.",
     description:
-      "Farol Discover is a travel-centric website designed with user-friendliness at its core. It features a custom-built Sanity Studio CMS that allows easy and real-time content management across multiple pages, including the homepage, about us, and contact pages. This CMS flexibility extends to managing tour programs and testimonials dynamically.",
+      "Farol Discover is a company marketing website designed with user-friendliness at its core. It features a custom-built Sanity Studio CMS that allows easy and real-time content management across multiple pages, including the homepage, about us, and contact pages, as well as the possibility of creating additional custom pages. This CMS flexibility extends to managing tour programs and testimonials dynamically.",
     image: "/farol-discover-clipped.png",
     links: {
       github: "https://github.com/jrparente/farol-discover",
@@ -33,7 +33,7 @@ export default [
       "Shadcnui",
     ],
     features: [
-      "Custom Sanity Studio: Enables the client to manage content across various pages, as well as dynamically create and update tour programs and testimonials.",
+      "Custom Sanity Studio: Enables the client to manage content across various pages, as well as dynamically create and update tour programs and testimonials and new marketing landing pages.",
       "Contact Form: Incorporates a fully functional contact form for customer inquiries.",
       "Dynamic Content Fetching: Leverages GROQ queries to dynamically fetch and display content from the backend.",
       "Responsive Design: Utilizes Tailwind CSS and Shadcnui for a fully responsive and intuitive user interface.",
@@ -49,6 +49,28 @@ export default [
       "UI/UX Design: Invested significant effort in creating a seamless and intuitive user interface, focusing on UX principles to enhance user engagement.",
     ],
     results: [],
+    imageGallery: [
+      // {
+      //   imgUrl: "/farol-discover-programs-mobile.png",
+      //   alt: "Mobile view of the tour programs page",
+      // },
+      {
+        imgUrl: "/farol-discover-hero.png",
+        alt: "Hero section of the homepage",
+      },
+      {
+        imgUrl: "/farol-discover-contact-page.png",
+        alt: "Contact page of the website",
+      },
+      {
+        imgUrl: "/farol-discover-custom-cms.png",
+        alt: "Custom CMS built with Sanity Studio",
+      },
+      {
+        imgUrl: "/farol-discover-custom-cms2.png",
+        alt: "Custom CMS built with Sanity Studio",
+      },
+    ],
   },
   // {
   //   id: "ai-business-genie",
@@ -126,6 +148,7 @@ export default [
     type: "Personal Project",
     date: "2023-10-15",
     name: "Library Management Dashboard 📚",
+    tagline: "A Library Management Dashboard with a mobile version",
     shortDescription:
       "A CRUD application built to manage library assets and loans, featuring a responsive design for desktop and mobile. Offers user authentication and real-time database updates.",
     description:
@@ -187,6 +210,8 @@ export default [
     type: "Personal Project",
     date: "2023-08-15",
     name: "AI Travel Planner ✈️",
+    tagline:
+      "An AI-powered travel planner that generates personalized itineraries",
     shortDescription:
       "An intuitive travel planner powered by AI. Generates personalized travel itineraries based on user preferences, including destinations, attractions, and activities. Features secure user authentication through Firebase.",
     description:
