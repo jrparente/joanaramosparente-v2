@@ -164,17 +164,22 @@ function CaseStudyPage({ project }: CaseStudyPageProps) {
               },
             ].map((section, idx) => (
               <div key={idx} className="mb-8">
-                <p className="text-2xl font-bold mb-4 text-gray-900">
-                  {section.title}
-                </p>
-                {section.content?.map((item, index) => {
-                  const [accordionTitle, accordionContent] = item.split(": ");
-                  return (
-                    <Accordion key={index} title={accordionTitle}>
-                      {accordionContent}
-                    </Accordion>
-                  );
-                })}
+                {section.content && section.content.length > 0 && (
+                  <>
+                    <p className="text-2xl font-bold mb-4 text-gray-900">
+                      {section.title}
+                    </p>
+                    {section.content?.map((item, index) => {
+                      const [accordionTitle, accordionContent] =
+                        item.split(": ");
+                      return (
+                        <Accordion key={index} title={accordionTitle}>
+                          {accordionContent}
+                        </Accordion>
+                      );
+                    })}
+                  </>
+                )}
               </div>
             ))}
           </div>
