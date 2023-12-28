@@ -273,7 +273,7 @@ export default [
     tagline: "A Personal Meal Planner created with the MERN Stack.",
     problemStatement:
       "Simplify Meal Planning with a Full-stack Web App. The goal is to have a well-rounded, but simple, meal planning solution.",
-    image: "/simple-dinners.png",
+    image: "/simple-dinners-generator-light-full.png",
     shortDescription:
       "A comprehensive meal planning app designed for simplicity. Automatically generate meal ideas, add your own recipes, and create a shopping list. Tailored for those who prefer straightforward meals.",
     description:
@@ -297,6 +297,40 @@ export default [
       "Implementing User Authentication: Overcame challenges in setting up secure user authentication, incorporating JWT tokens, and hashing passwords for user accounts.",
       "Database Integration: Successfully integrated MongoDB for storing user data, recipes, and generated meal ideas.",
       "CRUD Operations: Developed Create, Read, Update, and Delete functionalities for user-generated recipes and meal ideas.",
+    ],
+    imageGallery: [
+      {
+        imgUrl: "/simple-dinners-generator-1.png",
+        alt: "Landing marketing page - desktop view, dark mode",
+      },
+      {
+        imgUrl: "/simple-dinners-generator-2.png",
+        alt: "Login page - desktop view, dark mode",
+      },
+      {
+        imgUrl: "/simple-dinners-generator-3.png",
+        alt: "Meal Plan Generator dashboard - desktop view, dark mode",
+      },
+      {
+        imgUrl: "/simple-dinners-generator-4.png",
+        alt: "Add new Recipe page - desktop view, dark mode",
+      },
+      {
+        imgUrl: "/simple-dinners-generator-5.png",
+        alt: "Generate new Recipe page - desktop view, dark mode",
+      },
+      {
+        imgUrl: "/simple-dinners-generator-1-light.png",
+        alt: "Landing marketing page - desktop view, light mode",
+      },
+      {
+        imgUrl: "/simple-dinners-generator-3-light.png",
+        alt: "Meal Plan Generator dashboard - desktop view, light mode",
+      },
+      {
+        imgUrl: "/simple-dinners-generator-4-light.png",
+        alt: "Add new Recipe page - desktop view, light mode",
+      },
     ],
   },
 ];
