@@ -1,17 +1,5 @@
-import { Linkedin, Github, GithubIcon } from "lucide-react";
-
-const socialMedia = [
-  {
-    icon: Linkedin,
-    label: "LinkedIn",
-    href: "https://www.linkedin.com/in/joanaparente/",
-  },
-  {
-    icon: Github,
-    label: "Github",
-    href: "https://github.com/jrparente",
-  },
-];
+import { GithubIcon } from "lucide-react";
+import { socialMedia } from "../../data/constants";
 
 function Footer() {
   return (

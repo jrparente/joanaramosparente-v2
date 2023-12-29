@@ -192,7 +192,7 @@ function CaseStudyPage({ project }: CaseStudyPageProps) {
                 <p className="text-2xl font-bold mb-4 text-gray-900">
                   Project Image Gallery
                 </p>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="grid grid-cols-1 gap-8">
                   {project.imageGallery.map((image, idx) => (
                     <div key={idx} className="relative">
                       <img
