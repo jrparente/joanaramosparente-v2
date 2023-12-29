@@ -3,21 +3,7 @@ import { useState, useEffect } from "react";
 import MobileSidebar from "../MobileSidebar";
 import Button from "../ui/Button";
 import { useLocation } from "react-router-dom";
-
-const routes = [
-  {
-    label: "About",
-    href: "/#about",
-  },
-  {
-    label: "Projects",
-    href: "/#projects",
-  },
-  {
-    label: "Contact",
-    href: "/#contact",
-  },
-];
+import { routes } from "../../data/constants";
 
 function Navbar() {
   const location = useLocation();

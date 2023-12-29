@@ -1,11 +1,6 @@
 import { X } from "lucide-react";
 import { useEffect } from "react";
-
-const routes = [
-  { label: "About", href: "#about" },
-  { label: "Projects", href: "#projects" },
-  { label: "Contact", href: "#contact" },
-];
+import { routes } from "../../data/constants";
 
 function MobileSidebar({
   isOpen,
