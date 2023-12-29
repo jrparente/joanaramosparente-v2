@@ -2,7 +2,7 @@ import { Linkedin, MailPlus, Github } from "lucide-react";
 
 function ContactSection() {
   return (
-    <section className="min-h-[71vh]" id="contact">
+    <section className="min-h-[63vh] md:min-h-[76vh]" id="contact">
       <div className="max-w-screen-xl mx-auto flex flex-col justify-center px-5 xs:px-10 sm:px-12 md:px-24">
         <h2 className="text-2xl sm:text-4xl text-gray-900 font-extrabold pb-1.5 sm:pb-3">
           Let's Connect

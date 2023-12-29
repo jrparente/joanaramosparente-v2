@@ -8,25 +8,7 @@ import {
   FolderCog,
 } from "lucide-react";
 import Button from "../ui/Button";
-
-const technicalSkills: string[] = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Node.js",
-  "NextJS",
-  "SQL",
-  "MongoDB",
-  "Express.js",
-  "Git",
-];
-const marketingSkills: string[] = [
-  "SEO Best Practices",
-  "Content Creation",
-  "Social Media Strategy",
-];
+import { marketingSkills, technicalSkills } from "../../data/constants";
 
 function AboutSection() {
   return (

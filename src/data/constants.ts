@@ -18,3 +18,23 @@ export const socialMedia = [
     href: "https://github.com/jrparente",
   },
 ];
+
+export const technicalSkills: string[] = [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "TypeScript",
+  "React",
+  "Node.js",
+  "NextJS",
+  "SQL",
+  "MongoDB",
+  "Express.js",
+  "Git",
+];
+
+export const marketingSkills: string[] = [
+  "SEO Best Practices",
+  "Content Creation",
+  "Social Media Strategy",
+];

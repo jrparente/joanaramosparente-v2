@@ -1,5 +1,5 @@
 import profileImage from "../../assets/images/joana-parente-small.jpg";
-import SkillBar from "../SkillBar";
+// import SkillBar from "../SkillBar";
 import Button from "../ui/Button";
 
 function HeroSection() {
@@ -32,7 +32,7 @@ function HeroSection() {
           />
         </figure>
       </div>
-      <SkillBar />
+      {/* <SkillBar /> */}
     </section>
   );
 }
