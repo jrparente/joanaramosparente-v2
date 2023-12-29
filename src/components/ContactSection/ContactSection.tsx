@@ -1,5 +1,4 @@
-import Button from "../ui/Button";
-import { Mail, Linkedin } from "lucide-react";
+import { Linkedin, MailPlus, Github } from "lucide-react";
 
 function ContactSection() {
   return (
@@ -11,31 +10,43 @@ function ContactSection() {
         <div className="flex flex-col justify-center items-start lg:flex-row lg:items-center gap-8">
           <article className="w-full">
             <p>
-              I'm open to new opportunities, whether it's a full-time position
-              or freelance projects. Feel free to reach out; I aim to respond as
-              quickly as I can.
+              I'm always available at{" "}
+              <a
+                href="mailto:jrparente@gmail.com"
+                className="underline font-medium text-primary-900 hover:text-primary-700 inline-flex items-center gap-1"
+              >
+                jrparente@gmail.com
+                <MailPlus className="w-4 h-4" />
+              </a>
+              .
+            </p>
+            <p>
+              Other than that, you can find me on:{" "}
+              <ul>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/joanaparente/"
+                    target="_blank"
+                    className="underline font-medium text-primary-900 hover:text-primary-700 inline-flex items-center gap-1"
+                  >
+                    LinkedIn
+                    <Linkedin className="w-4 h-4" fill="currentColor" />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/jrparente/"
+                    target="_blank"
+                    className="underline font-medium text-primary-900 hover:text-primary-700 inline-flex items-center gap-1"
+                  >
+                    GitHub
+                    <Github className="w-4 h-4" fill="currentColor" />
+                  </a>
+                </li>
+              </ul>
             </p>
 
-            <div className="flex flex-wrap gap-2 mt-10 md:mt-20">
-              <a href="mailto:jrparente@gmail.com">
-                <Button>
-                  <div className="flex gap-2 items-center">
-                    <Mail className="w-4 h-4" /> Send an Email
-                  </div>
-                </Button>
-              </a>
-              <a
-                href="https://www.linkedin.com/in/joanaparente/"
-                target="_blank"
-              >
-                <Button variant="secondary">
-                  <div className="flex gap-2 items-center">
-                    <Linkedin className="w-4 h-4" fill="currentColor" /> Find me
-                    on LinkedIn
-                  </div>
-                </Button>
-              </a>
-            </div>
+            <p>I'm looking forward to hearing from you!</p>
           </article>
         </div>
       </div>

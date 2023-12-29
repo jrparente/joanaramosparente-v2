@@ -44,7 +44,7 @@ function AboutSection() {
                 href="https://www.linkedin.com/in/joanaparente/#experience"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline font-medium text-primary-900 inline-flex items-center gap-1"
+                className="underline font-medium text-primary-900 hover:text-primary-700 inline-flex items-center gap-1"
               >
                 <span>over 10 years of professional experience</span>
                 <ExternalLink className="w-3 h-3" />
@@ -65,7 +65,7 @@ function AboutSection() {
                 href="https://www.linkedin.com/in/joanaparente/#licenses_and_certifications"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline font-medium text-primary-900 inline-flex items-center gap-1"
+                className="underline font-medium text-primary-900 hover:text-primary-700 inline-flex items-center gap-1"
               >
                 <span>certificates</span>
                 <ExternalLink className="w-3 h-3" />
@@ -73,7 +73,7 @@ function AboutSection() {
               and completing{" "}
               <a
                 href="/#projects"
-                className="underline font-medium text-primary-900 inline-flex items-center gap-1"
+                className="underline font-medium text-primary-900 hover:text-primary-700 inline-flex items-center gap-1"
               >
                 <span>personal projects</span>
                 <ArrowDown className="w-3 h-3" />
