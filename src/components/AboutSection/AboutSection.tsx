@@ -14,7 +14,7 @@ function AboutSection() {
   return (
     <section className="min-h-screen" id="about">
       <div className="max-w-screen-xl mx-auto flex flex-col justify-center px-5 xs:px-10 sm:px-12 md:px-24 py-24">
-        <h2 className="text-2xl sm:text-4xl text-gray-900 font-extrabold pb-1.5 sm:pb-3">
+        <h2 className="text-2xl sm:text-4xl font-extrabold pb-1.5 sm:pb-3">
           About Me
         </h2>
         <div className=" flex flex-col justify-center items-start lg:flex-row lg:items-center gap-8">
@@ -26,7 +26,7 @@ function AboutSection() {
                 href="https://www.linkedin.com/in/joanaparente/#experience"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline font-medium text-primary-900 hover:text-primary-700 inline-flex items-center gap-1"
+                className="link inline-flex items-center gap-1"
               >
                 <span>over 10 years of professional experience</span>
                 <ExternalLink className="w-3 h-3" />
@@ -47,7 +47,7 @@ function AboutSection() {
                 href="https://www.linkedin.com/in/joanaparente/#licenses_and_certifications"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline font-medium text-primary-900 hover:text-primary-700 inline-flex items-center gap-1"
+                className="link inline-flex items-center gap-1"
               >
                 <span>certificates</span>
                 <ExternalLink className="w-3 h-3" />
@@ -55,7 +55,7 @@ function AboutSection() {
               and completing{" "}
               <a
                 href="/#projects"
-                className="underline font-medium text-primary-900 hover:text-primary-700 inline-flex items-center gap-1"
+                className="link inline-flex items-center gap-1"
               >
                 <span>personal projects</span>
                 <ArrowDown className="w-3 h-3" />
@@ -93,7 +93,7 @@ function AboutSection() {
                   <span className=" flex items-center gap-1 flex-wrap">
                     <span className="font-semibold">Front-end expertise:</span>{" "}
                     Mastery of{" "}
-                    <span className="border border-neutral-200 bg-neutral-50 rounded p-1 text-sm inline-flex items-center leading-4 text-gray-500 no-underline hover:text-gray-900 font-mono">
+                    <span className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800  rounded p-1 text-sm inline-flex items-center leading-4 text-gray-500 dark:text-neutral-100 no-underline font-mono">
                       <img
                         src="./react-logo.svg"
                         alt="React logo"
@@ -105,7 +105,7 @@ function AboutSection() {
                       React
                     </span>{" "}
                     and
-                    <span className="border border-neutral-200 bg-neutral-50 rounded p-1 text-sm inline-flex items-center leading-4 text-gray-500 no-underline hover:text-gray-900 font-mono">
+                    <span className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800  rounded p-1 text-sm inline-flex items-center leading-4 text-gray-500 dark:text-neutral-100 no-underline font-mono">
                       <img
                         src="./nextjs.svg"
                         alt="NextJS logo"
@@ -122,7 +122,7 @@ function AboutSection() {
                   <span className=" flex items-center gap-1 flex-wrap">
                     <span className="font-semibold">Back-end proficiency:</span>{" "}
                     In-depth knowledge of{" "}
-                    <span className="border border-neutral-200 bg-neutral-50 rounded p-1 text-sm inline-flex items-center leading-4 text-gray-500 no-underline hover:text-gray-900 font-mono">
+                    <span className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800  rounded p-1 text-sm inline-flex items-center leading-4 text-gray-500 dark:text-neutral-100 no-underline font-mono">
                       <img
                         src="./mongodb.svg"
                         alt="MongoDB logo"
@@ -134,7 +134,7 @@ function AboutSection() {
                       MongoDB
                     </span>
                     ,
-                    <span className="border border-neutral-200 bg-neutral-50 rounded p-1 text-sm inline-flex items-center leading-4 text-gray-500 no-underline hover:text-gray-900 font-mono">
+                    <span className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800  rounded p-1 text-sm inline-flex items-center leading-4 text-gray-500 dark:text-neutral-100 no-underline font-mono">
                       <img
                         src="./expressjs.svg"
                         alt="expressjs logo"
@@ -146,7 +146,7 @@ function AboutSection() {
                       ExpressJS
                     </span>{" "}
                     and{" "}
-                    <span className="border border-neutral-200 bg-neutral-50 rounded p-1 text-sm inline-flex items-center leading-4 text-gray-500 no-underline hover:text-gray-900 font-mono">
+                    <span className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800  rounded p-1 text-sm inline-flex items-center leading-4 text-gray-500 dark:text-neutral-100 no-underline font-mono">
                       <img
                         src="./nodejs.svg"
                         alt="nodejs logo"
@@ -164,7 +164,7 @@ function AboutSection() {
                     <span className="font-semibold">
                       Extended Technologies:
                     </span>{" "}
-                    <span className="border border-neutral-200 bg-neutral-50 rounded p-1 text-sm inline-flex items-center leading-4 text-gray-500 no-underline hover:text-gray-900 font-mono">
+                    <span className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800  rounded p-1 text-sm inline-flex items-center leading-4 text-gray-500 dark:text-neutral-100 no-underline font-mono">
                       <img
                         src="./docker.svg"
                         alt="docker logo"
@@ -176,7 +176,7 @@ function AboutSection() {
                       Docker
                     </span>
                     ,{" "}
-                    <span className="border border-neutral-200 bg-neutral-50 rounded p-1 text-sm inline-flex items-center leading-4 text-gray-500 no-underline hover:text-gray-900 font-mono">
+                    <span className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800  rounded p-1 text-sm inline-flex items-center leading-4 text-gray-500 dark:text-neutral-100 no-underline font-mono">
                       <img
                         src="./graphql.svg"
                         alt="graphql logo"
@@ -188,17 +188,17 @@ function AboutSection() {
                       GraphQL
                     </span>
                     ,{" "}
-                    <span className="border border-neutral-200 bg-neutral-50 rounded p-1 text-sm inline-flex items-center leading-4 text-gray-500 no-underline hover:text-gray-900 font-mono">
+                    <span className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800  rounded p-1 text-sm inline-flex items-center leading-4 text-gray-500 dark:text-neutral-100 no-underline font-mono">
                       <CloudCog className="inline-flex mr-1 w-4 h-4" />
                       Cloud Computing
                     </span>
                     ,{" "}
-                    <span className="border border-neutral-200 bg-neutral-50 rounded p-1 text-sm inline-flex items-center leading-4 text-gray-500 no-underline hover:text-gray-900 font-mono">
+                    <span className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800  rounded p-1 text-sm inline-flex items-center leading-4 text-gray-500 dark:text-neutral-100 no-underline font-mono">
                       <FolderCog className="inline-flex mr-1 w-4 h-4" />
                       Testing
                     </span>
                     ,{" "}
-                    <span className="border border-neutral-200 bg-neutral-50 rounded p-1 text-sm inline-flex items-center leading-4 text-gray-500 no-underline hover:text-gray-900 font-mono">
+                    <span className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800  rounded p-1 text-sm inline-flex items-center leading-4 text-gray-500 dark:text-neutral-100 no-underline font-mono">
                       <img
                         src="./devops.svg"
                         alt="devops logo"
@@ -219,7 +219,7 @@ function AboutSection() {
                 {technicalSkills.concat(marketingSkills).map((skill, index) => (
                   <span
                     key={index}
-                    className="bg-primary-100 text-primary-800 rounded-full px-3 py-1 text-sm font-semibold"
+                    className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800  rounded p-1 text-sm inline-flex items-center leading-4 text-gray-500 dark:text-neutral-100 font-mono"
                   >
                     {skill}
                   </span>

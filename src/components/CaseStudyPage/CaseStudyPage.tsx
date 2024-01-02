@@ -13,12 +13,10 @@ function CaseStudyPage({ project }: CaseStudyPageProps) {
       <section className="min-h-screen mt-20 md:mt-24 space-y-8">
         <header className="max-w-screen-xl mx-auto px-5 xs:px-10 sm:px-12 md:px-24 ">
           <div className="flex flex-col items-start gap-3">
-            <h1 className="text-base text-gray-600 font-normal">
-              {project.name}
-            </h1>
+            <h1 className="text-base font-normal">{project.name}</h1>
 
             {project.tagline && (
-              <span className="text-4xl text-gray-900 font-extrabold ">
+              <span className="text-4xl text-gray-900 dark:text-[#ededed] font-extrabold ">
                 {project.tagline}
               </span>
             )}
@@ -54,13 +52,13 @@ function CaseStudyPage({ project }: CaseStudyPageProps) {
           </div>
 
           <div className="flex flex-col md:items-end items-start gap-2 md:ml-auto mt-2 md:mt-0">
-            <span className=" text-gray-600 font-semibold text-xs">
+            <span className="font-semibold text-xs">
               Live Since: {project.date}
             </span>
           </div>
         </header>
 
-        <article className="bg-gray-100 mb-12 w-full">
+        <article className="bg-gray-100 dark:bg-[#1c1c1c] mb-12 w-full">
           <div className="max-w-screen-xl mx-auto px-5 xs:px-10 sm:px-12 md:px-24 grid grid-cols-1 lg:grid-cols-6 gap-8">
             <aside className="col-span-6 lg:col-span-2 lg:row-span-2 py-6 lg:order-2  flex items-center justify-center">
               <div className="screen-custom">
@@ -73,25 +71,19 @@ function CaseStudyPage({ project }: CaseStudyPageProps) {
 
             <section className="col-span-6 lg:col-span-4 pt-6 lg:order-1">
               <h2 className="text-xl font-semibold">Description</h2>
-              <span className="text-base text-gray-700">
-                {project.description}
-              </span>
+              <span className="text-base">{project.description}</span>
               {project.problemStatement && (
                 <>
                   <h2 className="text-xl font-semibold mt-6">
                     Problem Statement
                   </h2>
-                  <span className="text-base text-gray-700">
-                    {project.problemStatement}
-                  </span>
+                  <span className="text-base">{project.problemStatement}</span>
                 </>
               )}
               {project.role && (
                 <>
                   <h2 className="text-xl font-semibold mt-6">Role: </h2>
-                  <span className="text-base text-gray-700">
-                    {project.role}
-                  </span>
+                  <span className="text-base">{project.role}</span>
                 </>
               )}
             </section>
@@ -99,7 +91,10 @@ function CaseStudyPage({ project }: CaseStudyPageProps) {
             <section className="col-span-6 lg:col-span-4 pb-6  lg:order-3">
               <ul className="flex flex-wrap text-xs rounded text-gray-600 gap-x-2 gap-y-2 font-mono mb-4">
                 {project.techstack.map((tech) => (
-                  <li key={tech} className="bg-gray-200 px-2 py-1 rounded">
+                  <li
+                    key={tech}
+                    className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800  rounded p-1 text-sm inline-flex items-center leading-4 text-gray-500 dark:text-neutral-100 font-mono"
+                  >
                     {tech}
                   </li>
                 ))}
@@ -166,7 +161,7 @@ function CaseStudyPage({ project }: CaseStudyPageProps) {
               <div key={idx} className="mb-8">
                 {section.content && section.content.length > 0 && (
                   <>
-                    <p className="text-2xl font-bold mb-4 text-gray-900">
+                    <p className="text-2xl font-bold mb-4 text-gray-900  dark:text-[#ededed]">
                       {section.title}
                     </p>
                     {section.content?.map((item, index) => {
@@ -189,7 +184,7 @@ function CaseStudyPage({ project }: CaseStudyPageProps) {
           <div className="col-span-6 py-6">
             {project.imageGallery && project.imageGallery.length > 0 && (
               <>
-                <p className="text-2xl font-bold mb-4 text-gray-900">
+                <p className="text-2xl font-bold mb-4 text-gray-900  dark:text-[#ededed]">
                   Project Image Gallery
                 </p>
                 <div className="grid grid-cols-1 gap-8">

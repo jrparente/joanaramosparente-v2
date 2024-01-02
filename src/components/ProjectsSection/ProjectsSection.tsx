@@ -107,7 +107,7 @@ function ProjectsSection() {
       className="max-w-screen-xl mx-auto min-h-screen px-5 xs:px-10 sm:px-12 md:px-24 py-24"
       id="projects"
     >
-      <h2 className="text-2xl sm:text-4xl text-gray-900 font-extrabold pb-1.5 sm:pb-3">
+      <h2 className="text-2xl sm:text-4xl font-extrabold pb-1.5 sm:pb-3">
         What I've been up to
       </h2>
       <div className="flex flex-col justify-center items-start lg:flex-row lg:items-center gap-8">

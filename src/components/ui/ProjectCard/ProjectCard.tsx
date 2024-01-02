@@ -8,7 +8,7 @@ interface ProjectCardProps {
 
 function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <div className="bg-white py-4 flex flex-col md:flex-row lg:flex-col gap-8">
+    <div className=" py-4 flex flex-col md:flex-row lg:flex-col gap-8">
       <div className="screen">
         {project.iscasestudy ? (
           <a href={`/case-study/${project.id}`}>
@@ -32,7 +32,7 @@ function ProjectCard({ project }: ProjectCardProps) {
         <div className="flex items-center flex-wrap gap-2">
           {project.status && (
             <span
-              className={`text-xs uppercase font-mono text-gray-700 bg-gray-100 px-2 py-1 inline-block rounded ${
+              className={`text-xs uppercase font-mono text-gray-700 bg-gray-100  px-2 py-1 inline-block rounded ${
                 project.status === "Building..."
                   ? "bg-yellow-100 text-yellow-700"
                   : project.status === "On Hold"
@@ -59,12 +59,15 @@ function ProjectCard({ project }: ProjectCardProps) {
           )}
         </div>
         <h3 className="text-2xl font-bold my-4">{project.name}</h3>
-        <p className="text-sm mb-4 sm:text-base text-gray-600">
+        <p className="text-sm mb-4 sm:text-base text-gray-600 dark:text-[#bbbbbb]">
           {project.shortDescription || project.description}
         </p>
-        <ul className="flex flex-wrap text-xs rounded text-gray-600 gap-x-2 gap-y-2 font-mono mb-4">
+        <ul className="flex flex-wrap text-xs rounded gap-x-2 gap-y-2 mb-4">
           {project.techstack.map((tech) => (
-            <li key={tech} className="bg-gray-200 px-2 py-1 rounded">
+            <li
+              key={tech}
+              className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800  rounded p-1 text-sm inline-flex items-center leading-4 text-gray-500 dark:text-neutral-100 font-mono"
+            >
               {tech}
             </li>
           ))}

@@ -8,10 +8,10 @@ function HeroSection() {
       <div className="max-w-screen-xl mx-auto flex-1 flex flex-col justify-center md:flex-row md:items-center gap-8 px-5 xs:px-10 sm:px-12 md:px-24 py-24">
         <article className="w-full">
           <p className="text-primary-500 font-mono">Hi, my name is</p>
-          <h1 className="text-4xl sm:text-5xl text-gray-900 font-extrabold pb-1.5 md:pb-3">
+          <h1 className="text-4xl sm:text-5xl  font-extrabold pb-1.5 md:pb-3">
             Joana Parente
           </h1>
-          <span className="text-2xl sm:text-4xl text-gray-600 font-extrabold pb-2.5 sm:pb-3">
+          <span className="text-2xl sm:text-4xl text-gray-600 dark:text-[#bbbbbb] font-extrabold pb-2.5 sm:pb-3">
             I build things for the web.
           </span>
           <p>

@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 *,
 *::before,
 *::after {
@@ -21,7 +22,7 @@ html {
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  @apply text-sm sm:text-base text-gray-600;
+  @apply text-sm sm:text-base text-gray-600 dark:bg-[#131313] dark:text-[#bbbbbb];
 }
 
 img,
@@ -51,19 +52,23 @@ h6 {
 }
 
 h1 {
-  @apply scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl text-gray-900;
+  @apply scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl text-gray-900 dark:text-[#ededed];
 }
 
 h2 {
-  @apply scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0 text-gray-900;
+  @apply scroll-m-20 pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0 text-gray-900 dark:text-[#ededed];
 }
 
 h3 {
-  @apply scroll-m-20 text-2xl font-semibold tracking-tight text-gray-900;
+  @apply scroll-m-20 text-2xl font-semibold tracking-tight text-gray-900 dark:text-[#ededed];
 }
 
 p {
   @apply leading-7 [&:not(:first-child)]:mt-6 [&:not(:first-child)]:mb-6;
+}
+
+.link {
+  @apply hover:underline font-medium text-primary-900 hover:text-primary-700 dark:text-primary-600;
 }
 
 /* Project Card Image */

@@ -30,17 +30,17 @@ function Navbar() {
 
   return (
     <nav
-      className="fixed top-0 left-0 z-50 w-full bg-white bg-opacity-90 bg-blur-sm h-16"
+      className="fixed top-0 left-0 z-50 w-full bg-white dark:bg-[#131313] bg-opacity-90 bg-blur-sm h-16 text-gray-900 dark:text-[#bbbbbb]"
       role="navigation"
     >
       <MobileSidebar isOpen={isOpen} closeSidebar={closeSidebar} />
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4 px-5 xs:px-10 sm:px-12 md:px-24 ">
         <a href="/#" className="flex items-center">
-          <span className="hidden sm:inline-block self-center text-lg whitespace-nowrap uppercase text-gray-900">
+          <span className="hidden sm:inline-block self-center text-lg whitespace-nowrap uppercase">
             Joana
             <span className="hidden sm:inline-block font-bold">Parente</span>
           </span>
-          <span className="sm:hidden self-center text-2xl whitespace-nowrap uppercase text-gray-900">
+          <span className="sm:hidden self-center text-2xl whitespace-nowrap uppercase">
             J<span className="sm:hidden font-bold">P</span>
           </span>
         </a>
@@ -66,7 +66,7 @@ function Navbar() {
               <li key={index}>
                 <a
                   href={route.href}
-                  className="block font-mono py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-700 md:p-0 "
+                  className="block font-mono py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-700 md:p-0 "
                 >
                   {route.label}
                 </a>

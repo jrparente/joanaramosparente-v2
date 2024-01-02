@@ -14,7 +14,7 @@ function Accordion({ title, children }: AccordionProps) {
   };
 
   return (
-    <div className="accordion-item border-b">
+    <div className="accordion-item border-b border-gray-200 dark:border-[#2d2d2d]">
       <div className="flex accordion-header">
         <button
           onClick={toggleAccordion}
