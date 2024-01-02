@@ -22,7 +22,7 @@ function Bio() {
       <div className="w-full flex flex-col gap-3">
         <a
           href="/"
-          className="relative font-light text-center py-4 px-3 text-sm tracking-widest rounded-md no-underline border border-solid border-[#2D2D2D] bg-[#1C1C1C] shadow-md"
+          className="relative font-light text-center py-4 px-3 text-sm tracking-widest rounded-md no-underline border border-solid border-neutral-400 hover:border-neutral-500 bg-neutral-100 dark:border-[#2D2D2D] dark:hover:border-[#4C4C4C] dark:bg-[#1C1C1C] shadow-sm dark:shadow-md"
         >
           Website
         </a>
@@ -32,7 +32,7 @@ function Bio() {
             href={route.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="relative font-light text-center py-4 px-3 text-sm tracking-widest rounded-md no-underline border border-solid border-[#2D2D2D] bg-[#1C1C1C] shadow-md"
+            className="relative font-light text-center py-4 px-3 text-sm tracking-widest rounded-md no-underline border border-solid border-neutral-400 hover:border-neutral-500 bg-neutral-100 dark:border-[#2D2D2D] dark:hover:border-[#4C4C4C] dark:bg-[#1C1C1C] shadow-sm dark:shadow-md"
           >
             {route.label}
           </a>
