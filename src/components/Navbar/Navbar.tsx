@@ -30,7 +30,7 @@ function Navbar() {
 
   return (
     <nav
-      className="fixed top-0 left-0 z-50 w-full bg-white dark:bg-[#131313] bg-opacity-90 bg-blur-sm h-16 text-gray-900 dark:text-[#bbbbbb]"
+      className="fixed top-0 left-0 z-50 w-full bg-white dark:bg-[#131313] bg-opacity-50 dark:bg-opacity-50 backdrop-blur-lg h-16 text-gray-900 dark:text-[#bbbbbb] "
       role="navigation"
     >
       <MobileSidebar isOpen={isOpen} closeSidebar={closeSidebar} />
