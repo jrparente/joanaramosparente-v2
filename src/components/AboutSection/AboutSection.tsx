@@ -82,14 +82,14 @@ function AboutSection() {
               </span>
               , ending in August 2024. The program covers:
               <ul>
-                <li className="ml-8 list-disc">
+                <li className="ml-4 md:ml-8 list-disc">
                   <span className=" flex items-center gap-1 flex-wrap">
                     <span className="font-semibold">Foundational skills:</span>{" "}
                     Comprehensive understanding of computational thinking
                     principles.
                   </span>
                 </li>
-                <li className="ml-8 list-disc">
+                <li className="ml-4 md:ml-8 list-disc">
                   <span className=" flex items-center gap-1 flex-wrap">
                     <span className="font-semibold">Front-end expertise:</span>{" "}
                     Mastery of{" "}
@@ -118,7 +118,7 @@ function AboutSection() {
                     </span>
                   </span>
                 </li>
-                <li className="ml-8 list-disc">
+                <li className="ml-4 md:ml-8 list-disc">
                   <span className=" flex items-center gap-1 flex-wrap">
                     <span className="font-semibold">Back-end proficiency:</span>{" "}
                     In-depth knowledge of{" "}
@@ -159,7 +159,7 @@ function AboutSection() {
                     </span>
                   </span>
                 </li>
-                <li className="ml-8 list-disc">
+                <li className="ml-4 md:ml-8 list-disc">
                   <span className=" flex items-center gap-1 flex-wrap">
                     <span className="font-semibold">
                       Extended Technologies:
