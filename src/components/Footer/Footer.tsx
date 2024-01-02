@@ -1,4 +1,4 @@
-import { GithubIcon, MailIcon } from "lucide-react";
+import { GithubIcon } from "lucide-react";
 import { socialMedia } from "../../data/constants";
 
 function Footer() {
@@ -30,13 +30,6 @@ function Footer() {
                 <span className="sr-only">{route.label}</span>
               </a>
             ))}
-            <a
-              href="mailto:jrparente@gmail.com"
-              className="hover:text-primary-500"
-            >
-              <MailIcon className="w-4 h-4" />
-              <span className="sr-only">Email</span>
-            </a>
           </div>
         </div>
       </div>
