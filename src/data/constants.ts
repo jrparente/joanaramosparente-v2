@@ -1,4 +1,4 @@
-import { Linkedin, Github, Mail, Instagram } from "lucide-react";
+import { Linkedin, Github, Mail, Instagram, Twitter } from "lucide-react";
 
 export const routes = [
   { label: "About", href: "/#about" },
@@ -16,6 +16,11 @@ export const socialMedia = [
     icon: Github,
     label: "Github",
     href: "https://github.com/jrparente",
+  },
+  {
+    icon: Twitter,
+    label: "Twitter",
+    href: "https://twitter.com/joana_r_parente",
   },
   {
     icon: Instagram,
