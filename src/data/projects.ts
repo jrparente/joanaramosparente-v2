@@ -1,5 +1,64 @@
 export default [
   {
+    id: "cabanas-da-viscondessa",
+    live: true,
+    isFeatured: true,
+    status: "Completed",
+    isPublicRepository: false,
+    iscasestudy: true,
+    role: "Full-stack Developer, UX/UI Designer",
+    date: "2024-01-26",
+    type: "Client Project",
+    name: "Cabanas da Viscondessa 🏡",
+    tagline:
+      "A multi-language Hotel Website with an easy-to-use custom CMS and connected to a booking engine",
+    problemStatement:
+      "Creating a user-friendly, multi-language hotel website that allows easy content management. The website should be connected to a booking engine to allow online bookings.",
+    shortDescription:
+      "Responsive Hotel website offering a custom CMS for dynamic content management, built using React and Next.js, connected to a booking engine to allow online bookings.",
+    description:
+      "Cabanas da Viscondessa is a multi-language hotel website designed with user-friendliness at its core. It features a custom-built Sanity Studio CMS that allows easy and real-time content management across multiple pages, including the homepage, and the possibility of creating additional custom pages with custom built block sections. This CMS flexibility extends to managing website setting, company information and social media settings dynamically. The website is connected to a booking engine to allow online bookings.",
+    image: "/cabanas-viscondessa.png",
+    links: {
+      github: "",
+      live: "https://cabanas-viscondessa.vercel.app/",
+    },
+    categories: ["Personal/Company Website"],
+    mainTechnologies: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
+    techstack: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Sanity.io",
+      "Shadcnui",
+    ],
+    features: [
+      "Multi-language Support: Enable visitors to experience the website in multiple languages, enhancing accessibility and user engagement.",
+      "Integrated Booking Engine: Seamlessly connect with a booking engine, providing users with a straightforward and efficient way to make reservations and allowing the property owners to manage bookings easily, and manage availability across different platforms.",
+      "Custom Headless CMS for Dynamic Content Management: Utilize a custom-built Sanity.io CMS to manage and update website content in real-time, ensuring flexibility and ease of use.",
+      "Ability to Create Additional Pages and Manage Content with Block Type Sections: Empower administrators to create custom pages and manage content efficiently using block-type sections, allowing for a personalized and versatile website structure.",
+      "Responsive Design: Craft a website with a responsive design, ensuring optimal user experience across various devices and screen sizes.",
+    ],
+
+    codeHighlights: [],
+    challengesAndLearnings: [
+      "Localization in Sanity: Overcame the challenge of learning and implementing content localization in Sanity.io, ensuring seamless multi-language support on the website.",
+      "Integration with External Booking Engine: Successfully connected to an external booking engine, gaining valuable experience in integrating third-party services.",
+    ],
+    results: [],
+    imageGallery: [
+      {
+        imgUrl: "/cabanas-viscondessa-clipped.png",
+        alt: "Homepage of the Cabanas da Viscondessa website",
+      },
+      {
+        imgUrl: "/cabanas-viscondessa-admin-white-clipped.png",
+        alt: "Admin page of the Cabanas da Viscondessa website",
+      },
+    ],
+  },
+  {
     id: "farol-discover",
     live: true,
     isFeatured: true,
