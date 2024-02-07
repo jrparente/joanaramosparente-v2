@@ -21,7 +21,7 @@ export default [
     image: "/cabanas-viscondessa.png",
     links: {
       github: "",
-      live: "https://cabanas-viscondessa.vercel.app/",
+      live: "https://www.cabanasdaviscondessa.com/",
     },
     categories: ["Personal/Company Website"],
     mainTechnologies: ["React", "Next.js", "TypeScript", "Tailwind CSS"],

@@ -3,12 +3,13 @@ import { socialMedia } from "../../data/constants";
 
 function Footer() {
   return (
-    <footer>
-      <hr className="my-2 border-gray-200 sm:mx-auto dark:border-[#2d2d2d]" />
+    <footer className="bg-primary-950 py-5">
       <div className="max-w-screen-xl mx-auto py-4 px-5 xs:px-10 sm:px-12 md:px-24">
         <div className="sm:flex sm:items-center sm:justify-between">
-          <span className="text-xs sm:text-center">
-            Designed and coded by me. Code is publicly available on{" "}
+          <span className="text-sm sm:text-center">
+            <span className="text-white">
+              Designed and coded by me. Code is publicly available on{" "}
+            </span>
             <a
               href="https://github.com/jrparente/joanaramosparente-v2"
               target="_blank"
@@ -19,14 +20,14 @@ function Footer() {
               GitHub
             </a>
           </span>
-          <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
+          <div className="flex mt-8 space-x-5 sm:justify-center sm:mt-0">
             {socialMedia.map((route, index) => (
               <a
                 href={route.href}
                 key={index}
-                className="hover:text-primary-500"
+                className="hover:text-primary-500 text-white"
               >
-                <route.icon className="w-4 h-4" />
+                <route.icon className="w-5 h-5" />
                 <span className="sr-only">{route.label}</span>
               </a>
             ))}
