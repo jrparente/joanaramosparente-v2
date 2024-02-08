@@ -7,6 +7,7 @@ import NotFound from "./pages/not-found";
 import { useEffect } from "react";
 import { initGA, logPageView } from "./analytics";
 import Bio from "./pages/bio";
+import WorkWithMe from "./pages/work-with-me";
 
 function MainContent() {
   const location = useLocation();
@@ -23,6 +24,7 @@ function MainContent() {
           </Route>
           <Route path="*" element={<NotFound />} />
           <Route path="/bio" element={<Bio />} />
+          <Route path="/work-with-me" element={<WorkWithMe />} />
         </Routes>
       </main>
       {!isBioPage && <Footer />}
