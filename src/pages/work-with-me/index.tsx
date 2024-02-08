@@ -85,6 +85,20 @@ function WorkWithMe() {
               </p>
             </div>
           </div>
+
+          <div className="">
+            <div className="bg-white dark:bg-[#131313]">
+              <h2 className="text-3xl font-extrabold pb-3">Web Applications</h2>
+              <p>
+                A web application is a website that provides a set of features
+                to its users. Unlike marketing websites that are often
+                accessible publicly, web applications usually restrict access to
+                their features via a login, and provide a dashboard for their
+                users to manage their profile, preferences or billing
+                information.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
