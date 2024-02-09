@@ -250,12 +250,13 @@ function WorkWithMe() {
           </div>
           <div className="w-full flex justify-center">
             <form
-              name="contact"
+              name="work-with-me"
               className="w-full"
               method="POST"
               data-netlify="true"
               action="/success"
             >
+              <input type="hidden" name="work-with-me" value="work-with-me" />
               <div className="grid gap-4 sm:grid-cols-2 sm:gap-6">
                 <div className="w-full">
                   <input
