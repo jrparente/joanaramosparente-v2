@@ -256,7 +256,7 @@ function WorkWithMe() {
               data-netlify="true"
               action="/success"
             >
-              <input type="hidden" name="work-with-me" value="work-with-me" />
+              <input type="hidden" name="form-name" value="work-with-me" />
               <div className="grid gap-4 sm:grid-cols-2 sm:gap-6">
                 <div className="w-full">
                   <input
