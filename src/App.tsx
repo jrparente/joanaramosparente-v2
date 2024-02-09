@@ -8,6 +8,7 @@ import { useEffect } from "react";
 import { initGA, logPageView } from "./analytics";
 import Bio from "./pages/bio";
 import WorkWithMe from "./pages/work-with-me";
+import SuccessPage from "./pages/success";
 
 function MainContent() {
   const location = useLocation();
@@ -25,6 +26,7 @@ function MainContent() {
           <Route path="*" element={<NotFound />} />
           <Route path="/bio" element={<Bio />} />
           <Route path="/work-with-me" element={<WorkWithMe />} />
+          <Route path="/success" element={<SuccessPage />} />
         </Routes>
       </main>
       {!isBioPage && <Footer />}

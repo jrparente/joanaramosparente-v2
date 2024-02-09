@@ -254,6 +254,7 @@ function WorkWithMe() {
               className="w-full"
               method="POST"
               data-netlify="true"
+              action="/success"
             >
               <div className="grid gap-4 sm:grid-cols-2 sm:gap-6">
                 <div className="w-full">
