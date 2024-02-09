@@ -255,6 +255,7 @@ function WorkWithMe() {
               method="POST"
               data-netlify="true"
               action="/success"
+              data-netlify-honeypot="bot-field"
             >
               <input type="hidden" name="form-name" value="work-with-me" />
               <div className="grid gap-4 sm:grid-cols-2 sm:gap-6">
