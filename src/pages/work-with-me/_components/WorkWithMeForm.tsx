@@ -2,7 +2,12 @@ import Button from "../../../components/ui/Button";
 
 function WorkWithMeForm() {
   return (
-    <form name="work-with-me" className="w-full" action="/success">
+    <form
+      name="work-with-me"
+      method="post"
+      className="w-full"
+      action="/success"
+    >
       <input type="hidden" name="form-name" value="work-with-me" />
       <div className="grid gap-4 sm:grid-cols-2 sm:gap-6">
         <div className="w-full">
