@@ -24,14 +24,13 @@
 </head>
 
 <body>
-  <form name="work-with-me" data-netlify="true" netlify-honeypot="bot-field" netlify action="/success" hidden>
-    <input type="hidden" name="form-name" value="work-with-me" />
-    <input type="text" name="first-name" hidden />
-    <input type="text" name="last-name" hidden />
-    <input type="email" name="email" hidden />
-    <input type="url" name="website" hidden />
-    <textarea name="story" hidden></textarea>
-    <select name="services" hidden>
+  <form name="work-with-me" data-netlify="true" netlify-honeypot="bot-field" netlify hidden>
+    <input type="text" name="first-name" />
+    <input type="text" name="last-name" />
+    <input type="email" name="email" />
+    <input type="url" name="website" />
+    <textarea name="story"></textarea>
+    <select name="services">
       <option value="" disabled>Which service are you interested in?*</option>
       <option value="Marketing Website">Marketing Website</option>
       <option value="Landing Page">Landing Page</option>
@@ -39,7 +38,7 @@
       <option value="Web Applications">Web Applications</option>
       <option value="Others">Others</option>
     </select>
-    <select name="budget" hidden>
+    <select name="budget">
       <option value="" disabled>Select budget range*</option>
       <option value="€500 - €5,000">€500 - €5,000</option>
       <option value="€5,000 - €10,000">€5,000 - €10,000</option>
@@ -47,7 +46,7 @@
       <option value="I don't know">I don't know</option>
       <option value="I prefer not to say">I prefer not to say</option>
     </select>
-    <select name="timeline" hidden>
+    <select name="timeline">
       <option value="" disabled>When do you want to start?*</option>
       <option value="Yesterday">Yesterday</option>
       <option value="Next Month">Next Month</option>
@@ -55,7 +54,7 @@
       <option value="I'm flexible">I'm flexible</option>
       <option value="I'm in research mode">I'm in research mode</option>
     </select>
-    <textarea name="project" hidden></textarea>
+    <textarea name="project"></textarea>
   </form>
 
   <div id="root"></div>
