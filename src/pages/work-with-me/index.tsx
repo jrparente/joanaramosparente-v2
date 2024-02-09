@@ -1,4 +1,4 @@
-import { MoveUpRight } from "lucide-react";
+import { ArrowRight, MoveUpRight } from "lucide-react";
 import SkillBar from "../../components/SkillBar";
 import Button from "../../components/ui/Button";
 
@@ -15,8 +15,11 @@ function WorkWithMe() {
             visitors into customers. I specialize in building websites for small
             businesses and entrepreneurs.
           </p>
-          <a href="/#contact">
-            <Button size={"large"}>Get Started</Button>
+          <a href="#contact">
+            <Button size={"large"}>
+              Get Started
+              <ArrowRight className="ml-2 h-6 w-6" />
+            </Button>
           </a>
         </article>
         <figure className="w-full flex justify-center relative">
@@ -42,6 +45,36 @@ function WorkWithMe() {
         </figure>
       </div>
       <SkillBar />
+
+      <div className="bg-neutral-200 dark:bg-neutral-800 text-center">
+        <div className="max-w-screen-xl mx-auto flex-1 flex flex-col gap-8 px-5 xs:px-10 sm:px-12 md:px-24 py-24">
+          <div className="flex flex-col gap-4">
+            <span>
+              I'm your partner in crafting amazing digital experiences that not
+              only grab attention but also turn visitors into loyal customers. I
+              specialize in creating websites that drive results for small
+              businesses and entrepreneurs.
+            </span>
+            <span>
+              If your business solves a problem for people, then having a
+              website that speaks their language and builds connections is a
+              must. It's all about giving them the best online experience
+              possible.
+            </span>
+            <span>
+              Let's team up and take your brand to new heights! Together, we'll
+              make sure your online presence shines bright and your business
+              grows like never before.
+            </span>
+          </div>
+          <a href="#contact">
+            <Button size={"large"} variant={"secondary"}>
+              Let's Talk
+              <ArrowRight className="ml-2 h-6 w-6" />
+            </Button>
+          </a>
+        </div>
+      </div>
 
       <div className="max-w-screen-xl mx-auto flex-1 flex flex-col gap-8 px-5 xs:px-10 sm:px-12 md:px-24 py-24">
         <h1 className="text-4xl sm:text-5xl  font-extrabold pb-1.5 md:pb-3">
@@ -157,16 +190,20 @@ function WorkWithMe() {
               href="https://www.faroldiscover.pt/"
               target="_blank"
               rel="noopener noreferrer"
-              className="relative block rounded-lg overflow-hidden hover:opacity-50 transition-opacity duration-300"
+              className="relative block rounded-lg overflow-hidden h-full"
             >
               <img
                 src="farol-discover-hero.png"
                 alt="Farol Discover"
-                className="rounded-lg object-cover"
+                className="rounded-lg object-cover h-full"
               />
-              <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-                <MoveUpRight className="mr-2 h-6 w-6" />
-                <span className="text-white text-lg font-bold">
+              {/* Content to display on hover */}
+              <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute inset-0 bg-neutral-900/50 z-10"></div>
+                <div className="bg-neutral-900/50 p-2 rounded-full z-50">
+                  <MoveUpRight className="h-6 w-6" />
+                </div>
+                <span className="text-white text-2xl font-bold z-50">
                   Farol Discover
                 </span>
               </div>
@@ -177,16 +214,20 @@ function WorkWithMe() {
               href="https://www.cabanasdaviscondessa.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="relative block rounded-lg overflow-hidden hover:opacity-50 transition-opacity duration-300"
+              className="relative block rounded-lg overflow-hidden h-full"
             >
               <img
                 src="cabanas-viscondessa-clipped.png"
                 alt="Cabanas da Viscondessa"
-                className="rounded-lg object-cover"
+                className="rounded-lg object-cover h-full"
               />
-              <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-                <MoveUpRight className="mr-2 h-6 w-6" />
-                <span className="text-white text-lg font-bold">
+              {/* Content to display on hover */}
+              <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 ">
+                <div className="absolute inset-0 bg-neutral-900/50 z-10"></div>
+                <div className="bg-neutral-900/50 p-2 rounded-full z-50">
+                  <MoveUpRight className="h-6 w-6" />
+                </div>
+                <span className="text-white text-2xl font-bold z-50">
                   Cabanas da Viscondessa
                 </span>
               </div>
@@ -196,22 +237,149 @@ function WorkWithMe() {
       </div>
 
       {/* Section "Let's create together" */}
-      <div className="bg-gray-200 dark:bg-neutral-900">
-        <div className="max-w-screen-xl mx-auto flex-1 flex flex-col gap-8 px-5 xs:px-10 sm:px-12 md:px-24 py-24">
-          <div className="flex flex-col gap-4 justify-center items-center">
-            <h1 className="text-4xl sm:text-5xl  font-extrabold pb-1.5 md:pb-3">
+      <div className="bg-neutral-900 text-white" id="contact">
+        <div className="max-w-screen-xl mx-auto flex-1 flex flex-col md:flex-row gap-8 px-5 xs:px-10 sm:px-12 md:px-24 py-24">
+          <div className="w-full flex flex-col gap-4">
+            <h1 className="text-4xl text-white sm:text-5xl font-extrabold pb-1.5 md:pb-3">
               Let's create together
             </h1>
             <p>
-              I'm passionate about helping small businesses and entrepreneurs
-              succeed. Let's work together to elevate your brand and grow your
-              business online.
+              Ready to get started? We like to start with a chat about you and
+              your business. So fill in the form and we'll set up a call.
             </p>
           </div>
-          <div className="flex justify-center">
-            <a href="/#contact">
-              <Button size={"large"}>Get Started</Button>
-            </a>
+          <div className="w-full flex justify-center">
+            <form
+              name="contact"
+              className="w-full"
+              method="POST"
+              data-netlify="true"
+            >
+              <div className="grid gap-4 sm:grid-cols-2 sm:gap-6">
+                <div className="w-full">
+                  <input
+                    type="text"
+                    id="first-name"
+                    name="first-name"
+                    placeholder="First Name*"
+                    className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-primary-500 focus:outline-none focus:ring-0 focus:border-primary-600 peer"
+                    required
+                  />
+                </div>
+                <div className="w-full">
+                  <input
+                    type="text"
+                    id="last-name"
+                    name="last-name"
+                    placeholder="Last Name*"
+                    className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-primary-500 focus:outline-none focus:ring-0 focus:border-primary-600 peer"
+                    required
+                  />
+                </div>
+                <div className="w-full">
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Email*"
+                    className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-primary-500 focus:outline-none focus:ring-0 focus:border-primary-600 peer"
+                    required
+                  ></input>
+                </div>
+                <div className="w-full">
+                  <input
+                    type="url"
+                    id="website"
+                    name="website"
+                    placeholder="Your current website (if you have one)"
+                    className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-primary-500 focus:outline-none focus:ring-0 focus:border-primary-600 peer"
+                  />
+                </div>
+                <div className="sm:col-span-2">
+                  <textarea
+                    id="story"
+                    name="story"
+                    placeholder="Tell me your story, what does your business do and how did you get here*"
+                    rows={5}
+                    className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-primary-500 focus:outline-none focus:ring-0 focus:border-primary-600 peer"
+                    required
+                  ></textarea>
+                </div>
+                <div className="w-full">
+                  <select
+                    id="services"
+                    name="services"
+                    className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:bg-neutral-900 dark:text-white dark:border-gray-600 dark:focus:border-primary-500 focus:outline-none focus:ring-0 focus:border-primary-600 peer"
+                    required
+                    defaultValue=""
+                  >
+                    <option value="" disabled>
+                      Which service are you interested in?*
+                    </option>
+                    <option value="Marketing Website">Marketing Website</option>
+                    <option value="Landing Page">Landing Page</option>
+                    <option value="E-commerce">E-commerce</option>
+                    <option value="Web Applications">Web Applications</option>
+                    <option value="Others">Others</option>
+                  </select>
+                </div>
+                <div className="w-full">
+                  <select
+                    id="budget"
+                    name="budget"
+                    className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:bg-neutral-900 dark:text-white dark:border-gray-600 dark:focus:border-primary-500 focus:outline-none focus:ring-0 focus:border-primary-600 peer"
+                    required
+                    defaultValue=""
+                  >
+                    <option value="" disabled>
+                      Select budget range*
+                    </option>
+                    <option value="€500 - €5,000">€500 - €5,000</option>
+                    <option value="€5,000 - €10,000">€5,000 - €10,000</option>
+                    <option value="€10,000+">€10,000+</option>
+                    <option value="I don't know">I don't know</option>
+                    <option value="I prefer not to say">
+                      I prefer not to say
+                    </option>
+                  </select>
+                </div>
+
+                <div className="sm:col-span-2">
+                  <select
+                    id="timeline"
+                    name="timeline"
+                    className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:bg-neutral-900 dark:text-white dark:border-gray-600 dark:focus:border-primary-500 focus:outline-none focus:ring-0 focus:border-primary-600 peer"
+                    required
+                    defaultValue=""
+                  >
+                    <option value="" disabled>
+                      When do you want to start?*
+                    </option>
+                    <option value="Yesterday">Yesterday</option>
+                    <option value="Next Month">Next Month</option>
+                    <option value="In 3 Months">In 3 Months</option>
+                    <option value="I'm flexible'">I'm flexible'</option>
+                    <option value="I'm in research mode">
+                      I'm in research mode
+                    </option>
+                  </select>
+                </div>
+
+                <div className="sm:col-span-2">
+                  <textarea
+                    id="project"
+                    name="project"
+                    placeholder="Tell us about your project. What problems are you hoping to solve by working with us and what does success look like for your business?*"
+                    className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-primary-500 focus:outline-none focus:ring-0 focus:border-primary-600 peer"
+                    rows={5}
+                    required
+                  ></textarea>
+                </div>
+              </div>
+              <Button size={"large"} type="submit" className="mt-4 uppercase">
+                Send
+              </Button>
+            </form>
           </div>
         </div>
       </div>
