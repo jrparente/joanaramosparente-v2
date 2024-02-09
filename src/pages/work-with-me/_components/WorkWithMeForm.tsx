@@ -3,10 +3,10 @@ import Button from "../../../components/ui/Button";
 function WorkWithMeForm() {
   return (
     <form
-      name="work-with-me"
-      method="post"
       className="w-full"
-      action="/success"
+      name="work-with-me"
+      method="POST"
+      data-netlify="true"
     >
       <input type="hidden" name="form-name" value="work-with-me" />
       <div className="grid gap-4 sm:grid-cols-2 sm:gap-6">
