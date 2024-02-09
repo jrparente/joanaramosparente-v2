@@ -1,50 +1,45 @@
 import { ArrowRight, MoveUpRight } from "lucide-react";
 import SkillBar from "../../components/SkillBar";
 import Button from "../../components/ui/Button";
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
+
+function encode(data: Record<string, string>) {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+}
 
 function WorkWithMe() {
+  const navigate = useNavigate();
+
+  const [state, setState] = useState({});
+
+  const handleChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
+  ) => {
+    setState({ ...state, [e.target.name]: e.target.value });
+  };
+
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const handleSubmit = (e: any) => {
+    e.preventDefault();
+    const form = e.target;
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({
+        "form-name": form.getAttribute("name"),
+        ...state,
+      }),
+    })
+      .then(() => navigate(form.getAttribute("action")))
+      .catch((error) => alert(error));
+  };
   return (
     <>
-      <form name="work-with-me" data-netlify="true" action="/success" hidden>
-        <input type="hidden" name="form-name" value="work-with-me" />
-        <input type="text" name="first-name" hidden />
-        <input type="text" name="last-name" hidden />
-        <input type="email" name="email" hidden />
-        <input type="url" name="website" hidden />
-        <textarea name="story" hidden></textarea>
-        <select name="services" hidden>
-          <option value="" disabled>
-            Which service are you interested in?*
-          </option>
-          <option value="Marketing Website">Marketing Website</option>
-          <option value="Landing Page">Landing Page</option>
-          <option value="E-commerce">E-commerce</option>
-          <option value="Web Applications">Web Applications</option>
-          <option value="Others">Others</option>
-        </select>
-        <select name="budget" hidden>
-          <option value="" disabled>
-            Select budget range*
-          </option>
-          <option value="€500 - €5,000">€500 - €5,000</option>
-          <option value="€5,000 - €10,000">€5,000 - €10,000</option>
-          <option value="€10,000+">€10,000+</option>
-          <option value="I don't know">I don't know</option>
-          <option value="I prefer not to say">I prefer not to say</option>
-        </select>
-        <select name="timeline" hidden>
-          <option value="" disabled>
-            When do you want to start?*
-          </option>
-          <option value="Yesterday">Yesterday</option>
-          <option value="Next Month">Next Month</option>
-          <option value="In 3 Months">In 3 Months</option>
-          <option value="I'm flexible">I'm flexible</option>
-          <option value="I'm in research mode">I'm in research mode</option>
-        </select>
-        <textarea name="project" hidden></textarea>
-      </form>
-
       <section className="section min-h-[85vh] flex flex-col mt-10">
         <div className="max-w-screen-xl mx-auto flex-1 flex flex-col justify-center md:flex-row md:items-center gap-8 px-5 xs:px-10 sm:px-12 md:px-24 py-24">
           <article className="w-full">
@@ -300,6 +295,7 @@ function WorkWithMe() {
                 data-netlify="true"
                 action="/success"
                 data-netlify-honeypot="bot-field"
+                onSubmit={handleSubmit}
               >
                 <input type="hidden" name="form-name" value="work-with-me" />
                 <div className="grid gap-4 sm:grid-cols-2 sm:gap-6">
@@ -311,6 +307,7 @@ function WorkWithMe() {
                       placeholder="First Name*"
                       className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-primary-500 focus:outline-none focus:ring-0 focus:border-primary-600 peer"
                       required
+                      onChange={handleChange}
                     />
                   </div>
                   <div className="w-full">
@@ -321,6 +318,7 @@ function WorkWithMe() {
                       placeholder="Last Name*"
                       className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-primary-500 focus:outline-none focus:ring-0 focus:border-primary-600 peer"
                       required
+                      onChange={handleChange}
                     />
                   </div>
                   <div className="w-full">
@@ -331,6 +329,7 @@ function WorkWithMe() {
                       placeholder="Email*"
                       className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-primary-500 focus:outline-none focus:ring-0 focus:border-primary-600 peer"
                       required
+                      onChange={handleChange}
                     ></input>
                   </div>
                   <div className="w-full">
@@ -340,6 +339,7 @@ function WorkWithMe() {
                       name="website"
                       placeholder="Your current website (if you have one)"
                       className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-primary-500 focus:outline-none focus:ring-0 focus:border-primary-600 peer"
+                      onChange={handleChange}
                     />
                   </div>
                   <div className="sm:col-span-2">
@@ -350,6 +350,7 @@ function WorkWithMe() {
                       rows={5}
                       className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-primary-500 focus:outline-none focus:ring-0 focus:border-primary-600 peer"
                       required
+                      onChange={handleChange}
                     ></textarea>
                   </div>
                   <div className="w-full">
@@ -359,6 +360,7 @@ function WorkWithMe() {
                       className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:bg-neutral-900 dark:text-white dark:border-gray-600 dark:focus:border-primary-500 focus:outline-none focus:ring-0 focus:border-primary-600 peer"
                       required
                       defaultValue=""
+                      onChange={handleChange}
                     >
                       <option value="" disabled>
                         Which service are you interested in?*
@@ -379,6 +381,7 @@ function WorkWithMe() {
                       className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:bg-neutral-900 dark:text-white dark:border-gray-600 dark:focus:border-primary-500 focus:outline-none focus:ring-0 focus:border-primary-600 peer"
                       required
                       defaultValue=""
+                      onChange={handleChange}
                     >
                       <option value="" disabled>
                         Select budget range*
@@ -400,6 +403,7 @@ function WorkWithMe() {
                       className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:bg-neutral-900 dark:text-white dark:border-gray-600 dark:focus:border-primary-500 focus:outline-none focus:ring-0 focus:border-primary-600 peer"
                       required
                       defaultValue=""
+                      onChange={handleChange}
                     >
                       <option value="" disabled>
                         When do you want to start?*
@@ -422,6 +426,7 @@ function WorkWithMe() {
                       className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-primary-500 focus:outline-none focus:ring-0 focus:border-primary-600 peer"
                       rows={5}
                       required
+                      onChange={handleChange}
                     ></textarea>
                   </div>
                 </div>
