@@ -35,7 +35,7 @@ function Navbar() {
     >
       <MobileSidebar isOpen={isOpen} closeSidebar={closeSidebar} />
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4 px-5 xs:px-10 sm:px-12 md:px-24 ">
-        <a href="/#" className="flex items-center">
+        <a href="/#" className="flex items-center" area-label="Homepage">
           <span className="hidden sm:inline-block self-center text-lg whitespace-nowrap uppercase">
             Joana
             <span className="hidden sm:inline-block font-bold">Parente</span>
@@ -45,8 +45,11 @@ function Navbar() {
           </span>
         </a>
         <div className="md:hidden flex items-center">
-          <a href="#contact">
-            <Button>Let's Talk</Button>
+          <a
+            href="#contact"
+            aria-label="Go to the contact section of my website"
+          >
+            <Button area-label="Contact Me">Let's Talk</Button>
           </a>
           <button
             onClick={toggleSidebar}
@@ -67,13 +70,17 @@ function Navbar() {
                 <a
                   href={route.href}
                   className="block font-mono py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-700 md:p-0 "
+                  area-label={route.label}
                 >
                   {route.label}
                 </a>
               </li>
             ))}
             <li>
-              <a href="#contact">
+              <a
+                href="#contact"
+                aria-label="Go to the contact section of my website"
+              >
                 <Button aria-label="Contact Me">Let's Talk</Button>
               </a>
             </li>
