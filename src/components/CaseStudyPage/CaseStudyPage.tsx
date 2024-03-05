@@ -137,7 +137,7 @@ function CaseStudyPage({ project }: CaseStudyPageProps) {
               href={project.links.live}
               target="_blank"
               rel="noopener noreferrer"
-              area-label="Live Website"
+              aria-label="Live Website"
             >
               <Button variant="secondary" aria-label="Live Website">
                 <div className="flex gap-2 items-center">

@@ -43,7 +43,7 @@ function MobileSidebar({
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <button onClick={closeSidebar} className="p-4">
+        <button onClick={closeSidebar} className="p-4" aria-label="Close">
           <X />
         </button>
         <ul className="font-medium flex flex-col p-4">
@@ -52,6 +52,7 @@ function MobileSidebar({
               href="/"
               onClick={handleLinkClick}
               className="block font-mono py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100"
+              aria-label="Go to the homepage"
             >
               Home
             </a>
@@ -62,6 +63,7 @@ function MobileSidebar({
                 href={route.href}
                 onClick={handleLinkClick}
                 className="block font-mono py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100"
+                aria-label={route.label}
               >
                 {route.label}
               </a>

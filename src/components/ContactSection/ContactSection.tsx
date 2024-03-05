@@ -14,7 +14,7 @@ function ContactSection() {
               <a
                 href="mailto:jrparente@gmail.com"
                 className="link inline-flex items-center gap-1"
-                area-label="Email Me"
+                aria-label="Email Me"
               >
                 jrparente@gmail.com
                 <MailPlus className="w-4 h-4" />
@@ -29,7 +29,7 @@ function ContactSection() {
                     href="https://www.linkedin.com/in/joanaparente/"
                     target="_blank"
                     className="link inline-flex items-center gap-1"
-                    area-label="Reach out to me on LinkedIn"
+                    aria-label="Reach out to me on LinkedIn"
                   >
                     LinkedIn
                     <Linkedin className="w-4 h-4" fill="currentColor" />
@@ -40,7 +40,7 @@ function ContactSection() {
                     href="https://github.com/jrparente/"
                     target="_blank"
                     className="link inline-flex items-center gap-1"
-                    area-label="Check out my GitHub profile"
+                    aria-label="Check out my GitHub profile"
                   >
                     GitHub
                     <Github className="w-4 h-4" fill="currentColor" />

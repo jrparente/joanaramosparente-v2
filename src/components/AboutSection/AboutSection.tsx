@@ -27,7 +27,7 @@ function AboutSection() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="link inline-flex items-center gap-1"
-                area-label="Check out my professional experience in my LinkedIn profile"
+                aria-label="Check out my professional experience in my LinkedIn profile"
               >
                 <span>over 10 years of professional experience</span>
                 <ExternalLink className="w-3 h-3" />
@@ -49,7 +49,7 @@ function AboutSection() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="link inline-flex items-center gap-1"
-                area-label="View my certificates in my LinkedIn profile"
+                aria-label="View my certificates in my LinkedIn profile"
               >
                 <span>certificates</span>
                 <ExternalLink className="w-3 h-3" />

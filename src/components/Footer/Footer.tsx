@@ -15,7 +15,7 @@ function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800  rounded p-1 inline-flex items-center leading-4 dark:text-neutral-100 no-underline hover:text-primary-500"
-              area-label="Check out the code on GitHub"
+              aria-label="Check out the code on GitHub"
             >
               <GithubIcon className="inline-flex mr-1 w-4 h-4" />
               GitHub
@@ -27,7 +27,7 @@ function Footer() {
                 href={route.href}
                 key={index}
                 className="hover:text-primary-500 text-white"
-                area-label={route.label}
+                aria-label={route.label}
               >
                 <route.icon className="w-5 h-5" />
                 <span className="sr-only">{route.label}</span>
