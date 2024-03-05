@@ -39,19 +39,19 @@ function MobileSidebar({
         onClick={closeSidebar} // Close sidebar when backdrop is clicked
       ></div>
       <div
-        className={`fixed top-0 right-0 h-full w-64 bg-white z-40 transform transition-transform duration-300 ${
+        className={`fixed top-0 right-0 h-full w-64 bg-white dark:bg-[#131313] z-40 transform transition-transform duration-300 ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
         <button onClick={closeSidebar} className="p-4" aria-label="Close">
           <X />
         </button>
-        <ul className="font-medium flex flex-col p-4">
+        <ul className="font-medium flex flex-col p-4 bg-white dark:bg-[#131313] ">
           <li>
             <a
               href="/"
               onClick={handleLinkClick}
-              className="block font-mono py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100"
+              className="block font-mono py-2 pl-3 pr-4 text-gray-900 dark:text-[#bbbbbb] rounded hover:bg-gray-100"
               aria-label="Go to the homepage"
             >
               Home
@@ -62,7 +62,7 @@ function MobileSidebar({
               <a
                 href={route.href}
                 onClick={handleLinkClick}
-                className="block font-mono py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100"
+                className="block font-mono py-2 pl-3 pr-4 text-gray-900 dark:text-[#bbbbbb] rounded hover:bg-gray-100"
                 aria-label={route.label}
               >
                 {route.label}
