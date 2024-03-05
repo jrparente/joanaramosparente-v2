@@ -21,7 +21,7 @@ function HeroSection() {
             perspective to the world of code.
           </p>
           <a href="#contact">
-            <Button>Contact Me</Button>
+            <Button aria-label="Contact Me">Contact Me</Button>
           </a>
         </article>
         <figure className="w-full sm:w-3/5 sm:self-center flex justify-center">

@@ -74,7 +74,7 @@ function Navbar() {
             ))}
             <li>
               <a href="#contact">
-                <Button>Let's Talk</Button>
+                <Button aria-label="Contact Me">Let's Talk</Button>
               </a>
             </li>
           </ul>

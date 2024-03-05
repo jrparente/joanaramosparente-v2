@@ -75,7 +75,7 @@ function ProjectCard({ project }: ProjectCardProps) {
         <div className="flex items-center flex-wrap gap-2">
           {project.iscasestudy && (
             <a href={`/case-study/${project.id}`}>
-              <Button>
+              <Button aria-label="Case Study">
                 <div className="flex gap-2 items-center">
                   <FileText className="w-4 h-4" /> Case Study
                 </div>
@@ -88,7 +88,7 @@ function ProjectCard({ project }: ProjectCardProps) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Button>
+              <Button aria-label="Github Repository">
                 <div className="flex gap-2 items-center">
                   <Github className="w-4 h-4" /> GitHub
                 </div>
@@ -101,7 +101,7 @@ function ProjectCard({ project }: ProjectCardProps) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Button variant="secondary">
+              <Button variant="secondary" aria-label="Live Website">
                 <div className="flex gap-2 items-center">
                   <ExternalLink className="w-4 h-4" />{" "}
                   {project.live

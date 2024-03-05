@@ -227,7 +227,10 @@ function AboutSection() {
               </div>
             </article>
             <a href="/Joana_Parente_Resume.pdf" download>
-              <Button className="mt-10 flex items-center gap-2">
+              <Button
+                className="mt-10 flex items-center gap-2"
+                aria-label="Resume"
+              >
                 <Download /> Resume
               </Button>
             </a>

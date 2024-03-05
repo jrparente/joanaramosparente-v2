@@ -119,7 +119,10 @@ function ProjectsSection() {
 
           <div className="flex flex-row flex-wrap items-center justify-end gap-2">
             <div className="relative">
-              <Button onClick={handleFilterByProjectType}>
+              <Button
+                onClick={handleFilterByProjectType}
+                aria-label="Show Filters"
+              >
                 Filter by Project Type
                 <ChevronDown className="w-4 h-4 ml-2.5" />
               </Button>
@@ -155,7 +158,10 @@ function ProjectsSection() {
             </div>
 
             <div className="relative">
-              <Button onClick={handleFilterByCategory}>
+              <Button
+                onClick={handleFilterByCategory}
+                aria-label="Show Filters"
+              >
                 Filter by Category
                 <ChevronDown className="w-4 h-4 ml-2.5" />
               </Button>
@@ -191,7 +197,10 @@ function ProjectsSection() {
             </div>
 
             <div className="relative">
-              <Button onClick={handleFilterByTechStack}>
+              <Button
+                onClick={handleFilterByTechStack}
+                aria-label="Show Filters"
+              >
                 Filter by Technology
                 <ChevronDown className="w-4 h-4 ml-2.5" />
               </Button>

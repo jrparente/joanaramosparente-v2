@@ -110,7 +110,7 @@ function CaseStudyPage({ project }: CaseStudyPageProps) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Button>
+              <Button aria-label="GitHub Repository">
                 <div className="flex gap-2 items-center">
                   <Github className="w-4 h-4" /> Frontend Repository
                 </div>
@@ -123,7 +123,7 @@ function CaseStudyPage({ project }: CaseStudyPageProps) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Button>
+              <Button aria-label="Github Repository">
                 <div className="flex gap-2 items-center">
                   <Github className="w-4 h-4" /> Backend Repository
                 </div>
@@ -136,7 +136,7 @@ function CaseStudyPage({ project }: CaseStudyPageProps) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Button variant="secondary">
+              <Button variant="secondary" aria-label="Live Website">
                 <div className="flex gap-2 items-center">
                   <ExternalLink className="w-4 h-4" />{" "}
                   {project.live
