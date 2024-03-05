@@ -3,6 +3,7 @@ import { Linkedin, Github, Mail, Instagram, Twitter } from "lucide-react";
 export const routes = [
   { label: "About", href: "/#about" },
   { label: "Projects", href: "/#projects" },
+  { label: "Work With Me", href: "/work-with-me" },
   { label: "Contact", href: "/#contact" },
 ];
 
