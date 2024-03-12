@@ -68,7 +68,7 @@ p {
 }
 
 .link {
-  @apply hover:underline font-medium text-primary-900 hover:text-primary-700 dark:text-primary-300;
+  @apply underline hover:no-underline font-medium text-primary-900 hover:text-primary-700 dark:text-primary-300;
 }
 
 /* Project Card Image */
