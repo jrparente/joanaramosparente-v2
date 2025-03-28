@@ -21,7 +21,7 @@ export const socialMedia = [
   {
     icon: Twitter,
     label: "Twitter",
-    href: "https://twitter.com/joana_r_parente",
+    href: "https://x.com/joana_r_parente",
   },
   {
     icon: Instagram,
