@@ -7,7 +7,7 @@ export default [
     isPublicRepository: false,
     iscasestudy: true,
     role: "Full-stack Developer, UX/UI Designer",
-    date: "2025-03-28",
+    date: "2024-10-01",
     type: "Personal Project",
     name: "FeedFusion 📸",
     tagline:
