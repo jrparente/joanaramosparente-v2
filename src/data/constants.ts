@@ -47,10 +47,13 @@ export const technicalSkills: string[] = [
   "MongoDB",
   "Express.js",
   "Git",
+  "GitHub",
+  "REST APIs",
+  "CMS Integration (Sanity)",
 ];
 
 export const marketingSkills: string[] = [
   "SEO Best Practices",
-  "Content Creation",
-  "Social Media Strategy",
+  "Content Strategy and Creation",
+  "Social Media",
 ];

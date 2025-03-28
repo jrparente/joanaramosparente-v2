@@ -41,9 +41,9 @@ function AboutSection() {
               development.
             </p>
             <p>
-              Between October 2022 and September 2023, I took the initiative to
-              master front-end development independently. I successfully
-              completed courses from Scrimba, SheCodes and freeCodeCamp, earning{" "}
+              In 2022, I took the initiative to master front-end development
+              independently. I successfully completed courses from Scrimba,
+              SheCodes and freeCodeCamp, earning{" "}
               <a
                 href="https://www.linkedin.com/in/joanaparente/#licenses_and_certifications"
                 target="_blank"
@@ -65,37 +65,25 @@ function AboutSection() {
               </a>{" "}
               that attest to my knowledge of HTML, CSS, JavaScript and React.
             </p>
+
             <p>
-              At the moment, I am{" "}
-              <span className="font-semibold">
-                working as a freelance web developer and consultant
-              </span>
-              , helping clients build their online presence and achieve their
-              business goals, while also{" "}
-              <span className="font-semibold">
-                looking for a full-time position as a web developer
-              </span>
-              .
-            </p>
-            <p>
-              Currently enrolled in{" "}
+              In 2024, I took things further and completed the{" "}
               <span className="font-semibold">
                 MIT xPRO - Professional Certificate in Coding: Full Stack
                 Development with MERN
               </span>
-              , ending in August 2024. The program covers:
+              , a rigorous program covering:
               <ul>
                 <li className="ml-4 md:ml-8 list-disc">
                   <span className=" flex items-center gap-1 flex-wrap">
                     <span className="font-semibold">Foundational skills:</span>{" "}
-                    Comprehensive understanding of computational thinking
+                    Computer Science Foundations and real-world architecture
                     principles.
                   </span>
                 </li>
                 <li className="ml-4 md:ml-8 list-disc">
                   <span className=" flex items-center gap-1 flex-wrap">
                     <span className="font-semibold">Front-end expertise:</span>{" "}
-                    Mastery of{" "}
                     <span className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800  rounded p-1 text-sm inline-flex items-center leading-4 text-gray-500 dark:text-neutral-100 no-underline font-mono">
                       <img
                         src="./react-logo.svg"
@@ -124,7 +112,6 @@ function AboutSection() {
                 <li className="ml-4 md:ml-8 list-disc">
                   <span className=" flex items-center gap-1 flex-wrap">
                     <span className="font-semibold">Back-end proficiency:</span>{" "}
-                    In-depth knowledge of{" "}
                     <span className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800  rounded p-1 text-sm inline-flex items-center leading-4 text-gray-500 dark:text-neutral-100 no-underline font-mono">
                       <img
                         src="./mongodb.svg"
@@ -216,6 +203,20 @@ function AboutSection() {
                 </li>
               </ul>
             </p>
+
+            <p>
+              Today, I work as a{" "}
+              <span className="font-semibold">
+                freelance web developer and digital consultant
+              </span>
+              , helping clients build their online presence and achieve their
+              business goals. I’m also open to{" "}
+              <span className="font-semibold">
+                part-time or project-based roles
+              </span>
+              with teams that value thoughtful, clean, and scalable development.
+            </p>
+
             <article className="space-y-4">
               <h3 className="text-lg font-semibold">Key Skills</h3>
               <div className="flex flex-wrap justify-start items-center gap-4">
