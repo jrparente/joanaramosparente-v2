@@ -1,5 +1,82 @@
 export default [
   {
+    id: "feed-fusion",
+    live: true,
+    isFeatured: true,
+    status: "Completed",
+    isPublicRepository: false,
+    iscasestudy: true,
+    role: "Full-stack Developer, UX/UI Designer",
+    date: "2025-03-28",
+    type: "Personal Project",
+    name: "FeedFusion 📸",
+    tagline:
+      "Embed your Instagram feed on your website in seconds - with or without code.",
+    problemStatement:
+      "Users often struggle to keep their websites updated with fresh content. FeedFusion helps bridge that gap by making it easy to embed live Instagram feeds, no matter your technical level.",
+    shortDescription:
+      "FeedFusion helps users display their Instagram feed on any website with zero code or via a developer-friendly JSON API. Built for performance, ease of use, and engagement.",
+    description:
+      "FeedFusion is a web tool that allows users to easily embed their Instagram feed on any website. It features a no-code setup for non-technical users and a flexible JSON API for developers to integrate it into custom apps. Designed for creators, businesses, and developers alike, FeedFusion increases engagement by showcasing fresh, visual content while maintaining brand consistency. Users can preview a live demo and access documentation right from the site. Custom design options are coming soon to allow for deeper visual customization.",
+    image: "/feedfusion-cover.png",
+    links: {
+      github: "",
+      live: "https://www.feed-fusion.com/",
+    },
+    categories: ["SaaS", "API Tool", "Marketing Utility"],
+    mainTechnologies: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
+    techstack: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Prisma",
+      "Clerk Auth",
+      "Instagram Graph API (Meta)",
+      "Schadcn UI",
+    ],
+    features: [
+      "Live Instagram Feed Embeds: Seamlessly display your Instagram feed on your website with zero code required.",
+      "Developer API: Provides a public JSON feed for developers to integrate into custom apps and projects.",
+      "No-Code Setup: Simple and intuitive interface for users who don't want to touch code.",
+      "Live Demo Preview: See exactly how your feed will look before adding it to your site.",
+      "Authentication and Security: Uses Clerk Auth and JSON Web Tokens to securely manage user sessions and API access.",
+      "Scalable Architecture: Built using Prisma, Next.js, and a modular component system with Schadcn UI and Tailwind CSS.",
+      "Customization Options (Coming Soon): Users will be able to visually customize their feed to match their brand.",
+    ],
+    codeHighlights: [
+      "Instagram Graph API: Integrated the official Meta API for secure and real-time access to Instagram media data.",
+      "Developer API Endpoint: Created a public endpoint that returns sanitized, structured JSON data for feeds.",
+      "JWT Token Logic: Implemented secure token-based access for private user data and API authentication.",
+      "Clerk Integration: Used Clerk for easy user authentication and access control throughout the platform.",
+    ],
+    challengesAndLearnings: [
+      "Instagram API Quotas: Learned how to handle rate limits and access tokens from Meta's API securely and efficiently.",
+      "No-Code UX: Designed an onboarding flow that simplifies API usage for non-technical users.",
+      "Secure API Design: Implemented JWT and Clerk Auth to protect API endpoints and user data.",
+      "API Caching & Optimization: Minimized response times and ensured consistent data delivery with caching strategies.",
+    ],
+    results: [],
+    imageGallery: [
+      {
+        imgUrl: "/feedfusion-screenshot-demo.png",
+        alt: "Demo view of Instagram feed on website",
+      },
+      {
+        imgUrl: "/feedfusion-screenshot-demo2.png",
+        alt: "Demo view of Instagram feed on website",
+      },
+      {
+        imgUrl: "/feedfusion-screenshot-demo3.png",
+        alt: "Demo view of Instagram feed on website",
+      },
+      {
+        imgUrl: "/feedfusion-screenshot-demo4.png",
+        alt: "Demo view of Instagram feed on website",
+      },
+    ],
+  },
+  {
     id: "cabanas-da-viscondessa",
     live: true,
     isFeatured: true,
